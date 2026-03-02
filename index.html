@@ -100,14 +100,31 @@
             display: flex;
             align-items: center;
             gap: 0.75rem;
-            font-size: 1.5rem;
-            font-weight: 800;
-            color: var(--primary-red);
             text-decoration: none;
         }
 
-        .logo i {
-            font-size: 2rem;
+        .logo img {
+            height: 50px;
+            width: auto;
+        }
+
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .logo-text .main {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--primary-red);
+            line-height: 1.2;
+        }
+
+        .logo-text .sub {
+            font-size: 0.75rem;
+            color: var(--gray-600);
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
         }
 
         .nav-links {
@@ -281,18 +298,28 @@
 
         .hero-image {
             position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .hero-logo {
+            width: 300px;
+            height: auto;
+            filter: drop-shadow(0 10px 30px rgba(0,0,0,0.5));
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
         }
 
         .hero-image img {
             width: 100%;
             border-radius: 20px;
             box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
-            transform: perspective(1000px) rotateY(-5deg);
-            transition: transform 0.3s;
-        }
-
-        .hero-image:hover img {
-            transform: perspective(1000px) rotateY(0deg);
         }
 
         /* Features Section */
@@ -814,10 +841,12 @@
             display: flex;
             align-items: center;
             gap: 0.75rem;
-            font-size: 1.5rem;
-            font-weight: 800;
-            color: var(--primary-red);
             margin-bottom: 1rem;
+        }
+
+        .footer-brand .logo-footer img {
+            height: 60px;
+            width: auto;
         }
 
         .footer-links h4 {
@@ -912,6 +941,10 @@
                 font-size: 2.5rem;
             }
 
+            .hero-logo {
+                width: 200px;
+            }
+
             .nav-links {
                 display: none;
                 position: absolute;
@@ -959,6 +992,10 @@
                 justify-content: center;
                 text-align: center;
             }
+
+            .logo-text .main {
+                font-size: 1.2rem;
+            }
         }
 
         /* Animations */
@@ -994,8 +1031,11 @@
     <header>
         <nav>
             <a href="#" class="logo">
-                <i class="fas fa-heart-pulse"></i>
-                VIP Hayvancılık
+                <img src="https://i.imgur.com/8QH5ZKL.png" alt="VIP Hayvancılık Logo">
+                <div class="logo-text">
+                    <span class="main">VIP HAYVANCILIK</span>
+                    <span class="sub">Ecza Deposu</span>
+                </div>
             </a>
             <ul class="nav-links" id="navLinks">
                 <li><a href="#home">Ana Sayfa</a></li>
@@ -1042,7 +1082,7 @@
                 </div>
             </div>
             <div class="hero-image">
-                <img src="https://images.unsplash.com/photo-1559757175-5700dde675bc?w=600&h=400&fit=crop" alt="Veteriner Medikal Ürünler">
+                <img src="https://i.imgur.com/8QH5ZKL.png" alt="VIP Hayvancılık Logo" class="hero-logo">
             </div>
         </div>
     </section>
@@ -1235,7 +1275,7 @@
                         <div class="about-feature">
                             <i class="fas fa-check-circle"></i>
                             <div>
-                                <strong>Sohoğuk Zincir</strong>
+                                <strong>Soğuk Zincir</strong>
                                 <span>Aşı ve biyolojik ürünlerde</span>
                             </div>
                         </div>
@@ -1366,8 +1406,7 @@
             <div class="footer-grid">
                 <div class="footer-brand">
                     <div class="logo-footer">
-                        <i class="fas fa-heart-pulse"></i>
-                        VIP Hayvancılık
+                        <img src="https://i.imgur.com/8QH5ZKL.png" alt="VIP Hayvancılık Logo">
                     </div>
                     <p>2007'den beri İstanbul Beylikdüzü'nde veteriner medikal ürünler ve hayvancılık ekipmanları tedariği. 3 veteriner hekim ortaklığı.</p>
                     <p style="font-size: 0.875rem; color: var(--gray-500);">
