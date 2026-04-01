@@ -3,34 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VIP Hayvancılık | Veteriner Medikal & İlaç Deposu</title>
-    <meta name="description" content="VIP Hayvancılık - 2007'den beri İstanbul Beylikdüzü'nde veteriner ilaçları, medikal ürünler ve hayvancılık ekipmanları. 3 veteriner hekim ortaklığı.">
-    
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    
-    <!-- Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+    <title>VIP Hayvancılık | Veteriner Medikal Ürünler ve Hayvancılık Ekipmanları</title>
+    <meta name="description" content="VIP Hayvancılık; veteriner ilaçları, aşılar, spermalar, veteriner medikal ürünler, cerrahi iplikler, mikroçipler, cihazlar ve hayvancılık ekipmanlarında kurumsal tedarik çözüm ortağıdır.">
+    <meta name="theme-color" content="#9f1d22">
+    <meta name="robots" content="index, follow">
+    <meta property="og:locale" content="tr_TR">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="VIP Hayvancılık | Veteriner Medikal ve Hayvancılık Tedarik Çözümleri">
+    <meta property="og:description" content="Veteriner ilaçları, aşılar, spermalar, medikal ürünler ve hayvancılık ekipmanlarında güven veren kurumsal tedarik yaklaşımı.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="VIP Hayvancılık">
+    <meta name="twitter:description" content="Kurumsal veteriner medikal ürün tedariği ve hayvancılık ekipmanları çözümleri.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "VIP Hayvancılık Veteriner Medikal San. ve Dış Tic. Ltd. Şti.",
+      "email": "info@viphayvancilik.com.tr",
+      "telephone": "+90 212 642 75 50",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Adnan Kahveci Mah. Çankaya Cad. No:3",
+        "addressLocality": "Beylikdüzü",
+        "addressRegion": "İstanbul",
+        "addressCountry": "TR"
+      },
+      "sameAs": [
+        "https://wa.me/902126427550"
+      ]
+    }
+    </script>
     <style>
         :root {
-            --primary-red: #DC2626;
-            --dark-red: #B91C1C;
-            --light-red: #FEE2E2;
-            --white: #FFFFFF;
-            --off-white: #F9FAFB;
-            --gray-50: #F9FAFB;
-            --gray-100: #F3F4F6;
-            --gray-200: #E5E7EB;
-            --gray-600: #4B5563;
-            --gray-800: #1F2937;
-            --gray-900: #111827;
+            --bg: #f4f4f1;
+            --surface: #ffffff;
+            --surface-alt: #faf9f7;
+            --surface-dark: #111214;
+            --surface-dark-soft: #17191d;
+            --text: #16181c;
+            --text-soft: #5b616a;
+            --text-muted: #7e8590;
+            --line: rgba(17, 18, 20, 0.09);
+            --line-strong: rgba(17, 18, 20, 0.16);
+            --accent: #b32025;
+            --accent-dark: #8d171b;
+            --accent-soft: rgba(179, 32, 37, 0.08);
+            --success: #1b7a4b;
+            --shadow-lg: 0 30px 80px rgba(20, 21, 25, 0.12);
+            --shadow-md: 0 18px 42px rgba(20, 21, 25, 0.09);
+            --shadow-sm: 0 10px 22px rgba(20, 21, 25, 0.06);
+            --radius-lg: 28px;
+            --radius-md: 20px;
+            --radius-sm: 14px;
+            --container: 1240px;
+            --header-height: 84px;
         }
 
         * {
+            box-sizing: border-box;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
         }
 
         html {
@@ -38,1499 +74,2770 @@
         }
 
         body {
-            font-family: 'Inter', sans-serif;
-            line-height: 1.6;
-            color: var(--gray-800);
+            font-family: "Manrope", sans-serif;
+            background:
+                radial-gradient(circle at top left, rgba(179, 32, 37, 0.06), transparent 30%),
+                linear-gradient(180deg, #fcfbfa 0%, #f4f4f1 100%);
+            color: var(--text);
+            line-height: 1.65;
             overflow-x: hidden;
         }
 
-        /* Header */
-        .top-bar {
-            background: var(--gray-900);
-            color: var(--white);
-            padding: 0.75rem 0;
-            font-size: 0.875rem;
-        }
-
-        .top-bar-content {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 1rem;
-        }
-
-        .top-bar a {
-            color: var(--white);
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-
-        .top-bar a:hover {
-            color: var(--primary-red);
-        }
-
-        .top-bar i {
-            margin-right: 0.5rem;
-            color: var(--primary-red);
-        }
-
-        /* Navigation */
-        header {
-            background: var(--white);
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-
-        nav {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 1rem 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-            text-decoration: none;
-        }
-
-        .logo img {
-            height: 50px;
-            width: auto;
-        }
-
-        .logo-text {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .logo-text .main {
-            font-size: 1.5rem;
-            font-weight: 800;
-            color: var(--primary-red);
-            line-height: 1.2;
-        }
-
-        .logo-text .sub {
-            font-size: 0.75rem;
-            color: var(--gray-600);
-            letter-spacing: 0.1em;
-            text-transform: uppercase;
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 2.5rem;
-            list-style: none;
-            align-items: center;
-        }
-
-        .nav-links a {
-            text-decoration: none;
-            color: var(--gray-800);
-            font-weight: 600;
-            font-size: 0.95rem;
-            transition: color 0.3s;
-            position: relative;
-        }
-
-        .nav-links a:hover {
-            color: var(--primary-red);
-        }
-
-        .nav-links a::after {
-            content: '';
-            position: absolute;
-            bottom: -5px;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background: var(--primary-red);
-            transition: width 0.3s;
-        }
-
-        .nav-links a:hover::after {
-            width: 100%;
-        }
-
-        .mobile-menu-btn {
-            display: none;
-            background: none;
-            border: none;
-            font-size: 1.5rem;
-            color: var(--primary-red);
-            cursor: pointer;
-        }
-
-        /* Hero Section */
-        .hero {
-            background: linear-gradient(135deg, var(--gray-900) 0%, var(--dark-red) 100%);
-            color: var(--white);
-            padding: 6rem 2rem;
-            position: relative;
+        body.menu-open {
             overflow: hidden;
         }
 
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="40" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="0.5"/></svg>');
-            background-size: 100px 100px;
-            opacity: 0.3;
-        }
-
-        .hero-content {
-            max-width: 1200px;
-            margin: 0 auto;
-            position: relative;
-            z-index: 1;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 4rem;
-            align-items: center;
-        }
-
-        .hero-text h1 {
-            font-size: 3.5rem;
-            font-weight: 800;
-            line-height: 1.1;
-            margin-bottom: 1.5rem;
-        }
-
-        .hero-text h1 span {
-            color: var(--primary-red);
-            background: var(--white);
-            padding: 0 0.5rem;
-            border-radius: 4px;
-        }
-
-        .hero-text p {
-            font-size: 1.25rem;
-            margin-bottom: 2rem;
-            opacity: 0.9;
-            line-height: 1.8;
-        }
-
-        .hero-buttons {
-            display: flex;
-            gap: 1rem;
-            flex-wrap: wrap;
-        }
-
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: 600;
-            transition: all 0.3s;
-            cursor: pointer;
-            border: none;
-            font-size: 1rem;
-        }
-
-        .btn-primary {
-            background: var(--primary-red);
-            color: var(--white);
-            box-shadow: 0 10px 20px -5px rgba(220, 38, 38, 0.3);
-        }
-
-        .btn-primary:hover {
-            background: var(--dark-red);
-            transform: translateY(-2px);
-            box-shadow: 0 15px 30px -5px rgba(220, 38, 38, 0.4);
-        }
-
-        .btn-secondary {
-            background: transparent;
-            color: var(--white);
-            border: 2px solid var(--white);
-        }
-
-        .btn-secondary:hover {
-            background: var(--white);
-            color: var(--primary-red);
-        }
-
-        .hero-stats {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 2rem;
-            margin-top: 3rem;
-        }
-
-        .stat-item {
-            text-align: center;
-            padding: 1.5rem;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 12px;
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-        }
-
-        .stat-number {
-            font-size: 2.5rem;
-            font-weight: 800;
-            color: var(--white);
+        img {
+            max-width: 100%;
             display: block;
         }
 
-        .stat-label {
-            font-size: 0.875rem;
-            opacity: 0.9;
-            margin-top: 0.5rem;
+        a {
+            color: inherit;
         }
 
-        .hero-image {
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 2rem;
+        button,
+        input,
+        select,
+        textarea {
+            font: inherit;
         }
 
-        .hero-logo {
-            width: 300px;
-            height: auto;
-            filter: drop-shadow(0 10px 30px rgba(0,0,0,0.5));
-            animation: float 3s ease-in-out infinite;
+        :focus-visible {
+            outline: 3px solid rgba(179, 32, 37, 0.22);
+            outline-offset: 2px;
         }
 
-        @keyframes float {
-            0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-10px); }
+        .skip-link {
+            position: absolute;
+            top: -48px;
+            left: 16px;
+            z-index: 2000;
+            padding: 0.9rem 1rem;
+            background: var(--surface-dark);
+            color: #fff;
+            border-radius: 999px;
+            text-decoration: none;
+            transition: top 0.2s ease;
         }
 
-        .hero-image img {
-            width: 100%;
-            border-radius: 20px;
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
-        }
-
-        /* Features Section */
-        .features {
-            padding: 5rem 2rem;
-            background: var(--off-white);
+        .skip-link:focus {
+            top: 16px;
         }
 
         .container {
-            max-width: 1200px;
+            width: min(calc(100% - 32px), var(--container));
             margin: 0 auto;
+        }
+
+        .section {
+            padding: 104px 0;
         }
 
         .section-header {
-            text-align: center;
-            margin-bottom: 4rem;
+            display: grid;
+            gap: 18px;
+            margin-bottom: 40px;
+            max-width: 760px;
+        }
+
+        .section-kicker {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            width: fit-content;
+            padding: 0.55rem 0.85rem;
+            border-radius: 999px;
+            background: var(--accent-soft);
+            color: var(--accent-dark);
+            font-size: 0.82rem;
+            font-weight: 800;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
         }
 
         .section-header h2 {
-            font-size: 2.5rem;
+            font-size: clamp(2rem, 3vw, 3.25rem);
+            line-height: 1.08;
             font-weight: 800;
-            color: var(--gray-900);
-            margin-bottom: 1rem;
+            letter-spacing: -0.04em;
         }
 
         .section-header p {
-            font-size: 1.125rem;
-            color: var(--gray-600);
-            max-width: 600px;
-            margin: 0 auto;
+            font-size: 1.08rem;
+            color: var(--text-soft);
         }
 
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
+        .topbar {
+            background: #111214;
+            color: rgba(255, 255, 255, 0.82);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
         }
 
-        .feature-card {
-            background: var(--white);
-            padding: 2.5rem;
-            border-radius: 16px;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-            transition: all 0.3s;
-            border: 2px solid transparent;
+        .topbar-inner {
+            min-height: 54px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 16px;
+            flex-wrap: wrap;
+            padding: 10px 0;
         }
 
-        .feature-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
-            border-color: var(--light-red);
-        }
-
-        .feature-icon {
-            width: 60px;
-            height: 60px;
-            background: var(--light-red);
-            border-radius: 12px;
+        .topbar-meta,
+        .topbar-trust {
             display: flex;
             align-items: center;
-            justify-content: center;
-            margin-bottom: 1.5rem;
-            color: var(--primary-red);
-            font-size: 1.5rem;
-        }
-
-        .feature-card h3 {
-            font-size: 1.25rem;
-            font-weight: 700;
-            margin-bottom: 1rem;
-            color: var(--gray-900);
-        }
-
-        .feature-card p {
-            color: var(--gray-600);
-            line-height: 1.7;
-        }
-
-        /* Products Section */
-        .products {
-            padding: 5rem 2rem;
-            background: var(--white);
-        }
-
-        .products-filter {
-            display: flex;
-            justify-content: center;
-            gap: 1rem;
-            margin-bottom: 3rem;
+            gap: 18px;
             flex-wrap: wrap;
         }
 
-        .filter-btn {
-            padding: 0.75rem 1.5rem;
-            border: 2px solid var(--gray-200);
-            background: var(--white);
-            border-radius: 50px;
-            cursor: pointer;
-            font-weight: 600;
-            transition: all 0.3s;
-            color: var(--gray-600);
-        }
-
-        .filter-btn.active,
-        .filter-btn:hover {
-            background: var(--primary-red);
-            color: var(--white);
-            border-color: var(--primary-red);
-        }
-
-        .products-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2rem;
-        }
-
-        .product-card {
-            background: var(--white);
-            border-radius: 16px;
-            overflow: hidden;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-            transition: all 0.3s;
-            border: 1px solid var(--gray-100);
-        }
-
-        .product-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
-        }
-
-        .product-image {
-            height: 200px;
-            background: linear-gradient(135deg, var(--light-red) 0%, var(--white) 100%);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 3rem;
-            color: var(--primary-red);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .product-badge {
-            position: absolute;
-            top: 1rem;
-            right: 1rem;
-            background: var(--primary-red);
-            color: var(--white);
-            padding: 0.5rem 1rem;
-            border-radius: 50px;
-            font-size: 0.75rem;
-            font-weight: 700;
-        }
-
-        .product-info {
-            padding: 1.5rem;
-        }
-
-        .product-category {
-            color: var(--primary-red);
-            font-size: 0.875rem;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            margin-bottom: 0.5rem;
-        }
-
-        .product-info h3 {
-            font-size: 1.125rem;
-            font-weight: 700;
-            margin-bottom: 0.75rem;
-            color: var(--gray-900);
-        }
-
-        .product-info p {
-            color: var(--gray-600);
-            font-size: 0.9rem;
-            line-height: 1.6;
-            margin-bottom: 1rem;
-        }
-
-        .product-btn {
+        .topbar-item {
             display: inline-flex;
             align-items: center;
-            gap: 0.5rem;
-            color: var(--primary-red);
+            gap: 8px;
+            font-size: 0.92rem;
             text-decoration: none;
-            font-weight: 600;
-            font-size: 0.9rem;
-            transition: gap 0.3s;
+            color: inherit;
         }
 
-        .product-btn:hover {
-            gap: 0.75rem;
+        .topbar-item i,
+        .topbar-pill i {
+            color: #f36b68;
         }
 
-        /* About Section */
-        .about {
-            padding: 5rem 2rem;
-            background: var(--gray-900);
-            color: var(--white);
+        .topbar-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 0.45rem 0.75rem;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 999px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            letter-spacing: 0.03em;
+        }
+
+        .site-header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(252, 251, 250, 0.86);
+            backdrop-filter: blur(18px);
+            border-bottom: 1px solid transparent;
+            transition: background 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+        }
+
+        .site-header.is-scrolled {
+            border-color: rgba(17, 18, 20, 0.08);
+            box-shadow: 0 16px 34px rgba(17, 18, 20, 0.08);
+        }
+
+        .nav {
+            min-height: var(--header-height);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 28px;
+        }
+
+        .brand {
+            display: inline-flex;
+            align-items: center;
+            gap: 14px;
+            text-decoration: none;
+            min-width: 0;
+        }
+
+        .brand-mark {
+            width: 52px;
+            height: 52px;
+            border-radius: 18px;
+            background:
+                radial-gradient(circle at 30% 30%, #d94e52, transparent 55%),
+                linear-gradient(145deg, #cb2f33 0%, #821316 100%);
+            color: #fff;
+            display: grid;
+            place-items: center;
+            font-size: 1rem;
+            font-weight: 800;
+            letter-spacing: 0.18em;
+            box-shadow: 0 16px 30px rgba(179, 32, 37, 0.3);
+        }
+
+        .brand-text {
+            display: grid;
+            gap: 2px;
+        }
+
+        .brand-title {
+            font-size: 1.08rem;
+            font-weight: 800;
+            letter-spacing: 0.08em;
+        }
+
+        .brand-subtitle {
+            color: var(--text-muted);
+            font-size: 0.78rem;
+            letter-spacing: 0.11em;
+            text-transform: uppercase;
+        }
+
+        .nav-menu {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            list-style: none;
+        }
+
+        .nav-link {
             position: relative;
+            text-decoration: none;
+            color: var(--text-soft);
+            font-weight: 700;
+            font-size: 0.95rem;
+            transition: color 0.2s ease;
+        }
+
+        .nav-link::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            width: 100%;
+            height: 2px;
+            background: var(--accent);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.2s ease;
+        }
+
+        .nav-link:hover,
+        .nav-link:focus-visible,
+        .nav-link.is-active {
+            color: var(--text);
+        }
+
+        .nav-link:hover::after,
+        .nav-link:focus-visible::after,
+        .nav-link.is-active::after {
+            transform: scaleX(1);
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .btn,
+        .btn-ghost,
+        .btn-subtle {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            border-radius: 999px;
+            text-decoration: none;
+            border: 1px solid transparent;
+            cursor: pointer;
+            transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+            white-space: nowrap;
+        }
+
+        .btn {
+            min-height: 52px;
+            padding: 0 1.25rem;
+            background: linear-gradient(135deg, var(--accent) 0%, #8b1116 100%);
+            color: #fff;
+            font-weight: 800;
+            box-shadow: 0 18px 30px rgba(179, 32, 37, 0.24);
+        }
+
+        .btn:hover,
+        .btn:focus-visible {
+            transform: translateY(-1px);
+            box-shadow: 0 24px 34px rgba(179, 32, 37, 0.3);
+        }
+
+        .btn-ghost {
+            min-height: 52px;
+            padding: 0 1.2rem;
+            border-color: rgba(255, 255, 255, 0.14);
+            background: rgba(255, 255, 255, 0.06);
+            color: #fff;
+            font-weight: 700;
+        }
+
+        .btn-ghost:hover,
+        .btn-ghost:focus-visible {
+            background: rgba(255, 255, 255, 0.12);
+            transform: translateY(-1px);
+        }
+
+        .btn-subtle {
+            min-height: 52px;
+            padding: 0 1.15rem;
+            border-color: var(--line);
+            background: rgba(255, 255, 255, 0.82);
+            color: var(--text);
+            font-weight: 700;
+        }
+
+        .btn-subtle:hover,
+        .btn-subtle:focus-visible {
+            border-color: rgba(179, 32, 37, 0.28);
+            color: var(--accent-dark);
+        }
+
+        .mobile-toggle {
+            display: none;
+            width: 52px;
+            height: 52px;
+            border: 1px solid var(--line);
+            background: rgba(255, 255, 255, 0.86);
+            border-radius: 16px;
+            color: var(--text);
+            font-size: 1.1rem;
+            cursor: pointer;
+        }
+
+        .hero {
+            position: relative;
+            overflow: clip;
+            padding: 42px 0 110px;
+        }
+
+        .hero::before,
+        .hero::after {
+            content: "";
+            position: absolute;
+            border-radius: 999px;
+            pointer-events: none;
+            filter: blur(12px);
+        }
+
+        .hero::before {
+            top: 60px;
+            right: -120px;
+            width: 420px;
+            height: 420px;
+            background: radial-gradient(circle, rgba(179, 32, 37, 0.22) 0%, rgba(179, 32, 37, 0) 72%);
+        }
+
+        .hero::after {
+            left: -160px;
+            bottom: -120px;
+            width: 360px;
+            height: 360px;
+            background: radial-gradient(circle, rgba(17, 18, 20, 0.1) 0%, rgba(17, 18, 20, 0) 76%);
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: minmax(0, 1.08fr) minmax(320px, 0.92fr);
+            gap: 34px;
+            align-items: stretch;
+        }
+
+        .hero-copy,
+        .hero-panel {
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-copy {
+            padding: 18px 0 0;
+        }
+
+        .hero-eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 0.62rem 0.95rem;
+            margin-bottom: 20px;
+            border-radius: 999px;
+            background: rgba(17, 18, 20, 0.06);
+            color: var(--text-soft);
+            font-size: 0.84rem;
+            font-weight: 800;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.7rem, 5.5vw, 5.5rem);
+            line-height: 0.95;
+            letter-spacing: -0.06em;
+            max-width: 12ch;
+            font-weight: 800;
+            margin-bottom: 24px;
+        }
+
+        .hero h1 span {
+            color: var(--accent);
+        }
+
+        .hero-intro {
+            max-width: 62ch;
+            font-size: 1.12rem;
+            color: var(--text-soft);
+            margin-bottom: 28px;
+        }
+
+        .hero-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-bottom: 30px;
+        }
+
+        .trust-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-bottom: 34px;
+        }
+
+        .trust-chip {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 0.82rem 1rem;
+            border-radius: 999px;
+            background: rgba(255, 255, 255, 0.72);
+            border: 1px solid rgba(17, 18, 20, 0.06);
+            box-shadow: var(--shadow-sm);
+            font-size: 0.9rem;
+            font-weight: 700;
+        }
+
+        .trust-chip i {
+            color: var(--accent);
+        }
+
+        .hero-expertise {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 14px;
+        }
+
+        .expertise-card {
+            min-height: 132px;
+            padding: 18px 18px 16px;
+            border-radius: 22px;
+            background: rgba(255, 255, 255, 0.76);
+            border: 1px solid rgba(17, 18, 20, 0.07);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .expertise-card strong {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 1rem;
+            font-weight: 800;
+            letter-spacing: -0.03em;
+        }
+
+        .expertise-card p {
+            color: var(--text-soft);
+            font-size: 0.95rem;
+        }
+
+        .hero-panel {
+            border-radius: 34px;
+            padding: 28px;
+            background:
+                linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02)),
+                linear-gradient(145deg, #17191d 0%, #0f1012 100%);
+            color: rgba(255, 255, 255, 0.92);
+            box-shadow: var(--shadow-lg);
             overflow: hidden;
         }
 
-        .about::before {
-            content: '';
+        .hero-panel::before {
+            content: "";
             position: absolute;
-            top: -50%;
-            right: -20%;
-            width: 600px;
-            height: 600px;
-            background: var(--primary-red);
-            border-radius: 50%;
-            opacity: 0.1;
+            inset: 0;
+            background:
+                radial-gradient(circle at top right, rgba(179, 32, 37, 0.28), transparent 34%),
+                linear-gradient(transparent, rgba(255, 255, 255, 0.02));
+            pointer-events: none;
+        }
+
+        .hero-panel > * {
+            position: relative;
+            z-index: 1;
+        }
+
+        .panel-head {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 16px;
+            margin-bottom: 26px;
+        }
+
+        .panel-head h2 {
+            font-size: 1.4rem;
+            line-height: 1.15;
+            font-weight: 800;
+            letter-spacing: -0.04em;
+            max-width: 13ch;
+        }
+
+        .panel-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 0.6rem 0.75rem;
+            border-radius: 999px;
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            background: rgba(255, 255, 255, 0.05);
+            font-size: 0.78rem;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+
+        .hero-panel-grid {
+            display: grid;
+            grid-template-columns: 1.15fr 0.85fr;
+            gap: 18px;
+            margin-bottom: 18px;
+        }
+
+        .panel-card {
+            border-radius: 24px;
+            padding: 18px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .panel-card-title {
+            color: rgba(255, 255, 255, 0.72);
+            font-size: 0.82rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 12px;
+            font-weight: 700;
+        }
+
+        .metric-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 12px;
+        }
+
+        .metric {
+            padding: 16px;
+            border-radius: 18px;
+            background: rgba(255, 255, 255, 0.04);
+        }
+
+        .metric strong {
+            display: block;
+            font-size: 1.45rem;
+            line-height: 1;
+            font-weight: 800;
+            margin-bottom: 8px;
+        }
+
+        .metric span {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.88rem;
+        }
+
+        .panel-list {
+            display: grid;
+            gap: 12px;
+            list-style: none;
+        }
+
+        .panel-list li {
+            display: flex;
+            gap: 12px;
+            padding: 14px;
+            border-radius: 18px;
+            background: rgba(255, 255, 255, 0.04);
+        }
+
+        .panel-list i {
+            width: 38px;
+            height: 38px;
+            flex-shrink: 0;
+            display: grid;
+            place-items: center;
+            border-radius: 12px;
+            background: rgba(179, 32, 37, 0.22);
+            color: #fff;
+        }
+
+        .panel-list strong {
+            display: block;
+            font-size: 0.96rem;
+            margin-bottom: 2px;
+        }
+
+        .panel-list span {
+            font-size: 0.86rem;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .panel-footer {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 12px;
+        }
+
+        .panel-foot-card {
+            padding: 16px;
+            border-radius: 18px;
+            background: rgba(255, 255, 255, 0.04);
+            text-align: center;
+        }
+
+        .panel-foot-card strong {
+            display: block;
+            font-size: 1rem;
+            margin-bottom: 4px;
+        }
+
+        .panel-foot-card span {
+            font-size: 0.82rem;
+            color: rgba(255, 255, 255, 0.68);
+        }
+
+        .why-us {
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.85) 16%, rgba(255, 255, 255, 0.85) 100%);
+        }
+
+        .why-grid,
+        .categories-grid,
+        .featured-grid,
+        .stats-grid,
+        .footer-grid {
+            display: grid;
+            gap: 18px;
+        }
+
+        .why-grid {
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+
+        .why-card,
+        .category-card,
+        .featured-card,
+        .about-stat,
+        .process-card,
+        .faq-item,
+        .contact-card,
+        .contact-form,
+        .cta-banner,
+        .map-card {
+            background: rgba(255, 255, 255, 0.86);
+            border: 1px solid rgba(17, 18, 20, 0.07);
+            border-radius: 26px;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .why-card {
+            padding: 26px;
+            min-height: 250px;
+        }
+
+        .card-icon {
+            width: 56px;
+            height: 56px;
+            display: grid;
+            place-items: center;
+            border-radius: 18px;
+            background: linear-gradient(145deg, rgba(179, 32, 37, 0.16), rgba(179, 32, 37, 0.04));
+            color: var(--accent);
+            font-size: 1.3rem;
+            margin-bottom: 22px;
+        }
+
+        .why-card h3,
+        .category-card h3,
+        .featured-card h3,
+        .process-card h3,
+        .contact-card h3,
+        .contact-form h3 {
+            font-size: 1.2rem;
+            line-height: 1.2;
+            font-weight: 800;
+            letter-spacing: -0.03em;
+            margin-bottom: 12px;
+        }
+
+        .why-card p,
+        .category-card p,
+        .featured-card p,
+        .process-card p,
+        .contact-card p {
+            color: var(--text-soft);
+        }
+
+        .categories-layout {
+            display: grid;
+            grid-template-columns: minmax(0, 0.78fr) minmax(0, 1.22fr);
+            gap: 24px;
+            align-items: start;
+        }
+
+        .categories-intro {
+            position: sticky;
+            top: calc(var(--header-height) + 26px);
+            padding: 30px;
+            border-radius: 30px;
+            background:
+                linear-gradient(160deg, rgba(17, 18, 20, 0.96), rgba(24, 26, 30, 0.96));
+            color: rgba(255, 255, 255, 0.9);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .categories-intro p {
+            color: rgba(255, 255, 255, 0.72);
+            margin-bottom: 24px;
+        }
+
+        .intro-list {
+            display: grid;
+            gap: 14px;
+            list-style: none;
+            margin-bottom: 28px;
+        }
+
+        .intro-list li {
+            display: flex;
+            gap: 12px;
+            align-items: flex-start;
+        }
+
+        .intro-list i {
+            width: 36px;
+            height: 36px;
+            display: grid;
+            place-items: center;
+            border-radius: 12px;
+            background: rgba(179, 32, 37, 0.22);
+            color: #fff;
+            flex-shrink: 0;
+        }
+
+        .categories-grid {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .category-card {
+            position: relative;
+            overflow: hidden;
+            padding: 26px;
+            min-height: 250px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .category-card::after {
+            content: "";
+            position: absolute;
+            inset: auto -40px -60px auto;
+            width: 160px;
+            height: 160px;
+            border-radius: 999px;
+            background: radial-gradient(circle, rgba(179, 32, 37, 0.14), rgba(179, 32, 37, 0));
+        }
+
+        .category-tags,
+        .featured-tags,
+        .about-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: auto;
+            padding-top: 18px;
+        }
+
+        .chip {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 0.48rem 0.8rem;
+            border-radius: 999px;
+            background: rgba(17, 18, 20, 0.05);
+            color: var(--text-soft);
+            font-size: 0.8rem;
+            font-weight: 700;
+        }
+
+        .featured-section {
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.74), rgba(255, 255, 255, 0.96));
+        }
+
+        .filter-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 26px;
+        }
+
+        .filter-btn {
+            min-height: 46px;
+            padding: 0 1rem;
+            border-radius: 999px;
+            border: 1px solid rgba(17, 18, 20, 0.08);
+            background: rgba(255, 255, 255, 0.82);
+            color: var(--text-soft);
+            font-weight: 800;
+            cursor: pointer;
+            transition: transform 0.2s ease, color 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+        }
+
+        .filter-btn:hover,
+        .filter-btn:focus-visible,
+        .filter-btn.is-active {
+            background: var(--accent);
+            border-color: var(--accent);
+            color: #fff;
+            transform: translateY(-1px);
+        }
+
+        .featured-grid {
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+
+        .featured-card {
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .featured-media {
+            position: relative;
+            min-height: 208px;
+            padding: 28px;
+            background:
+                radial-gradient(circle at top right, rgba(179, 32, 37, 0.2), rgba(179, 32, 37, 0) 42%),
+                linear-gradient(160deg, #181a1f 0%, #24272d 100%);
+            color: #fff;
+        }
+
+        .featured-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 0.45rem 0.72rem;
+            border-radius: 999px;
+            background: rgba(255, 255, 255, 0.09);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.78rem;
+            font-weight: 800;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+
+        .featured-icon {
+            position: absolute;
+            right: 26px;
+            bottom: 24px;
+            font-size: 3rem;
+            color: rgba(255, 255, 255, 0.22);
+        }
+
+        .featured-media h3 {
+            margin-top: 18px;
+            margin-bottom: 10px;
+            font-size: 1.38rem;
+        }
+
+        .featured-content {
+            padding: 26px;
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+
+        .featured-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 14px;
+        }
+
+        .featured-category {
+            color: var(--accent-dark);
+            font-size: 0.83rem;
+            font-weight: 800;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .featured-note {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            font-weight: 700;
+        }
+
+        .featured-list {
+            display: grid;
+            gap: 10px;
+            list-style: none;
+            margin: 18px 0 24px;
+        }
+
+        .featured-list li {
+            display: flex;
+            gap: 10px;
+            color: var(--text-soft);
+            font-size: 0.95rem;
+        }
+
+        .featured-list i {
+            color: var(--accent);
+            margin-top: 4px;
+        }
+
+        .featured-actions {
+            margin-top: auto;
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .featured-actions a {
+            font-size: 0.92rem;
+        }
+
+        .featured-empty {
+            padding: 26px;
+            border: 1px dashed rgba(17, 18, 20, 0.18);
+            border-radius: 24px;
+            text-align: center;
+            color: var(--text-soft);
+            background: rgba(255, 255, 255, 0.65);
         }
 
         .about-grid {
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 4rem;
-            align-items: center;
-            position: relative;
-            z-index: 1;
+            grid-template-columns: minmax(0, 1.05fr) minmax(320px, 0.95fr);
+            gap: 24px;
+            align-items: stretch;
         }
 
-        .about-content h2 {
-            font-size: 2.5rem;
-            font-weight: 800;
-            margin-bottom: 1.5rem;
+        .about-panel {
+            padding: 34px;
+            border-radius: 32px;
+            background:
+                linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(255, 255, 255, 0.8));
+            border: 1px solid rgba(17, 18, 20, 0.08);
+            box-shadow: var(--shadow-md);
         }
 
-        .about-content h2 span {
-            color: var(--primary-red);
+        .about-copy p {
+            color: var(--text-soft);
+            margin-bottom: 16px;
         }
 
-        .about-content p {
-            font-size: 1.1rem;
-            line-height: 1.8;
-            margin-bottom: 1.5rem;
-            opacity: 0.9;
+        .stats-grid {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            margin-top: 24px;
         }
 
-        .about-features {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 1.5rem;
-            margin-top: 2rem;
+        .about-stat {
+            padding: 24px;
         }
 
-        .about-feature {
-            display: flex;
-            align-items: flex-start;
-            gap: 1rem;
-        }
-
-        .about-feature i {
-            color: var(--primary-red);
-            font-size: 1.25rem;
-            margin-top: 0.25rem;
-        }
-
-        .about-feature div strong {
+        .about-stat strong {
             display: block;
-            margin-bottom: 0.25rem;
-        }
-
-        .about-feature div span {
-            font-size: 0.9rem;
-            opacity: 0.8;
-        }
-
-        .about-image {
-            position: relative;
-        }
-
-        .about-image img {
-            width: 100%;
-            border-radius: 20px;
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
-        }
-
-        .experience-badge {
-            position: absolute;
-            bottom: -20px;
-            left: -20px;
-            background: var(--primary-red);
-            color: var(--white);
-            padding: 2rem;
-            border-radius: 16px;
-            text-align: center;
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
-        }
-
-        .experience-badge .years {
-            font-size: 3rem;
-            font-weight: 800;
-            display: block;
+            font-size: 2rem;
             line-height: 1;
+            margin-bottom: 8px;
+            letter-spacing: -0.05em;
         }
 
-        .experience-badge .text {
-            font-size: 0.9rem;
-            opacity: 0.9;
+        .about-stat span,
+        .about-stat p {
+            color: var(--text-soft);
+            font-size: 0.95rem;
         }
 
-        /* Contact Section */
-        .contact {
-            padding: 5rem 2rem;
-            background: var(--off-white);
-        }
-
-        .contact-grid {
+        .about-side {
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 4rem;
+            gap: 18px;
         }
 
-        .contact-info h2 {
-            font-size: 2.5rem;
-            font-weight: 800;
-            margin-bottom: 1rem;
-            color: var(--gray-900);
+        .about-feature-card {
+            padding: 26px;
+            border-radius: 28px;
+            background: linear-gradient(160deg, #181a1f 0%, #24272d 100%);
+            color: rgba(255, 255, 255, 0.9);
+            box-shadow: var(--shadow-lg);
         }
 
-        .contact-info > p {
-            color: var(--gray-600);
-            margin-bottom: 2rem;
-            font-size: 1.1rem;
+        .about-feature-card h3 {
+            font-size: 1.28rem;
+            margin-bottom: 14px;
+            line-height: 1.18;
+            letter-spacing: -0.03em;
         }
 
-        .contact-details {
+        .about-feature-card p {
+            color: rgba(255, 255, 255, 0.74);
+            margin-bottom: 18px;
+        }
+
+        .about-checklist {
+            list-style: none;
+            display: grid;
+            gap: 12px;
+        }
+
+        .about-checklist li {
             display: flex;
-            flex-direction: column;
-            gap: 1.5rem;
-            margin-bottom: 2rem;
+            gap: 12px;
+            align-items: flex-start;
+        }
+
+        .about-checklist i {
+            width: 34px;
+            height: 34px;
+            display: grid;
+            place-items: center;
+            border-radius: 12px;
+            background: rgba(179, 32, 37, 0.24);
+            color: #fff;
+            flex-shrink: 0;
+        }
+
+        .process-grid {
+            display: grid;
+            grid-template-columns: repeat(5, minmax(0, 1fr));
+            gap: 18px;
+        }
+
+        .process-card {
+            position: relative;
+            padding: 28px 24px 24px;
+            min-height: 240px;
+        }
+
+        .process-step {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 44px;
+            height: 44px;
+            border-radius: 14px;
+            background: var(--accent-soft);
+            color: var(--accent-dark);
+            font-weight: 800;
+            margin-bottom: 18px;
+        }
+
+        .process-card::after {
+            content: "";
+            position: absolute;
+            top: 48px;
+            right: -14px;
+            width: 28px;
+            height: 2px;
+            background: rgba(179, 32, 37, 0.18);
+        }
+
+        .process-card:last-child::after {
+            display: none;
+        }
+
+        .faq-grid {
+            display: grid;
+            grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+            gap: 24px;
+            align-items: start;
+        }
+
+        .faq-aside {
+            padding: 30px;
+            border-radius: 30px;
+            background: linear-gradient(160deg, #181a1f 0%, #24272d 100%);
+            color: rgba(255, 255, 255, 0.9);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .faq-aside p {
+            color: rgba(255, 255, 255, 0.74);
+            margin: 16px 0 24px;
+        }
+
+        .faq-list {
+            display: grid;
+            gap: 14px;
+        }
+
+        .faq-item {
+            overflow: hidden;
+        }
+
+        .faq-question {
+            width: 100%;
+            border: 0;
+            background: transparent;
+            text-align: left;
+            padding: 22px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 18px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: 800;
+            color: var(--text);
+        }
+
+        .faq-question i {
+            transition: transform 0.2s ease;
+            color: var(--accent);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.26s ease;
+        }
+
+        .faq-answer-inner {
+            padding: 0 24px 24px;
+            color: var(--text-soft);
+        }
+
+        .faq-item.is-open .faq-question i {
+            transform: rotate(45deg);
+        }
+
+        .contact-layout {
+            display: grid;
+            grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+            gap: 24px;
+        }
+
+        .contact-stack {
+            display: grid;
+            gap: 18px;
+        }
+
+        .contact-card {
+            padding: 26px;
+        }
+
+        .contact-list {
+            display: grid;
+            gap: 14px;
+            margin-top: 18px;
         }
 
         .contact-item {
             display: flex;
+            gap: 12px;
             align-items: flex-start;
-            gap: 1rem;
-            padding: 1.5rem;
-            background: var(--white);
-            border-radius: 12px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-            transition: all 0.3s;
-        }
-
-        .contact-item:hover {
-            transform: translateX(5px);
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
         }
 
         .contact-item i {
-            width: 50px;
-            height: 50px;
-            background: var(--light-red);
-            color: var(--primary-red);
-            border-radius: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.25rem;
+            width: 40px;
+            height: 40px;
+            display: grid;
+            place-items: center;
+            border-radius: 14px;
+            background: var(--accent-soft);
+            color: var(--accent);
             flex-shrink: 0;
         }
 
-        .contact-item div strong {
+        .contact-item strong {
             display: block;
-            color: var(--gray-900);
-            margin-bottom: 0.25rem;
+            margin-bottom: 2px;
         }
 
-        .contact-item div span,
-        .contact-item div a {
-            color: var(--gray-600);
+        .contact-item span,
+        .contact-item a {
+            color: var(--text-soft);
             text-decoration: none;
-            font-size: 0.95rem;
         }
 
-        .contact-item div a:hover {
-            color: var(--primary-red);
+        .cta-banner {
+            padding: 24px;
+            display: grid;
+            gap: 14px;
+            background:
+                radial-gradient(circle at top right, rgba(179, 32, 37, 0.12), rgba(179, 32, 37, 0) 42%),
+                rgba(255, 255, 255, 0.9);
         }
 
-        .social-links {
+        .cta-actions {
             display: flex;
-            gap: 1rem;
-        }
-
-        .social-links a {
-            width: 45px;
-            height: 45px;
-            background: var(--white);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--gray-600);
-            text-decoration: none;
-            transition: all 0.3s;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-        }
-
-        .social-links a:hover {
-            background: var(--primary-red);
-            color: var(--white);
-            transform: translateY(-3px);
+            gap: 10px;
+            flex-wrap: wrap;
         }
 
         .contact-form {
-            background: var(--white);
-            padding: 2.5rem;
-            border-radius: 20px;
-            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+            padding: 32px;
         }
 
-        .contact-form h3 {
-            font-size: 1.5rem;
-            margin-bottom: 1.5rem;
-            color: var(--gray-900);
+        .form-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 16px;
         }
 
-        .form-group {
-            margin-bottom: 1.5rem;
+        .field {
+            display: grid;
+            gap: 8px;
         }
 
-        .form-group label {
-            display: block;
-            margin-bottom: 0.5rem;
-            font-weight: 600;
-            color: var(--gray-700);
-            font-size: 0.9rem;
+        .field-full {
+            grid-column: 1 / -1;
         }
 
-        .form-group input,
-        .form-group textarea,
-        .form-group select {
+        .field label {
+            font-size: 0.92rem;
+            font-weight: 800;
+            color: var(--text);
+        }
+
+        .field input,
+        .field select,
+        .field textarea {
             width: 100%;
-            padding: 0.875rem;
-            border: 2px solid var(--gray-200);
-            border-radius: 8px;
-            font-family: inherit;
-            font-size: 1rem;
-            transition: border-color 0.3s;
+            padding: 0.95rem 1rem;
+            border-radius: 16px;
+            border: 1px solid rgba(17, 18, 20, 0.12);
+            background: #fff;
+            color: var(--text);
+            transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
         }
 
-        .form-group input:focus,
-        .form-group textarea:focus,
-        .form-group select:focus {
+        .field input::placeholder,
+        .field textarea::placeholder {
+            color: #a0a6ae;
+        }
+
+        .field input:focus,
+        .field select:focus,
+        .field textarea:focus {
             outline: none;
-            border-color: var(--primary-red);
+            border-color: rgba(179, 32, 37, 0.45);
+            box-shadow: 0 0 0 4px rgba(179, 32, 37, 0.09);
         }
 
-        .form-group textarea {
+        .field textarea {
+            min-height: 150px;
             resize: vertical;
-            min-height: 120px;
         }
 
-        .submit-btn {
-            width: 100%;
-            padding: 1rem;
-            background: var(--primary-red);
-            color: var(--white);
-            border: none;
-            border-radius: 8px;
-            font-size: 1rem;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.3s;
+        .field-error {
+            min-height: 1.2em;
+            color: var(--accent-dark);
+            font-size: 0.83rem;
+            font-weight: 700;
         }
 
-        .submit-btn:hover {
-            background: var(--dark-red);
-            transform: translateY(-2px);
-            box-shadow: 0 10px 20px -5px rgba(220, 38, 38, 0.3);
+        .field.is-invalid input,
+        .field.is-invalid select,
+        .field.is-invalid textarea {
+            border-color: rgba(179, 32, 37, 0.65);
+            background: rgba(179, 32, 37, 0.03);
         }
 
-        /* Map Section */
-        .map-section {
-            height: 400px;
-            background: var(--gray-200);
-            position: relative;
+        .form-note {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-top: 6px;
         }
 
-        .map-section iframe {
+        .form-actions {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 14px;
+            flex-wrap: wrap;
+            margin-top: 10px;
+        }
+
+        .form-feedback {
+            display: none;
+            margin-top: 20px;
+            padding: 18px;
+            border-radius: 20px;
+            background: rgba(27, 122, 75, 0.08);
+            border: 1px solid rgba(27, 122, 75, 0.18);
+        }
+
+        .form-feedback.is-visible {
+            display: block;
+        }
+
+        .form-feedback strong {
+            display: block;
+            color: var(--success);
+            margin-bottom: 6px;
+        }
+
+        .form-feedback p {
+            color: var(--text-soft);
+            margin-bottom: 14px;
+        }
+
+        .map-card {
+            overflow: hidden;
+            min-height: 420px;
+        }
+
+        .map-card iframe {
             width: 100%;
             height: 100%;
-            border: none;
-            filter: grayscale(20%);
+            border: 0;
+            filter: grayscale(0.15) contrast(1.02);
         }
 
-        /* Footer */
-        footer {
-            background: var(--gray-900);
-            color: var(--white);
-            padding: 4rem 2rem 2rem;
+        .site-footer {
+            position: relative;
+            overflow: hidden;
+            padding: 80px 0 28px;
+            background:
+                radial-gradient(circle at top right, rgba(179, 32, 37, 0.16), rgba(179, 32, 37, 0) 28%),
+                linear-gradient(180deg, #121316 0%, #0d0e10 100%);
+            color: rgba(255, 255, 255, 0.86);
+        }
+
+        .site-footer::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background:
+                linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+                linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+            background-size: 34px 34px;
+            mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7), transparent 100%);
+            pointer-events: none;
+        }
+
+        .site-footer .container {
+            position: relative;
+            z-index: 1;
         }
 
         .footer-grid {
-            display: grid;
-            grid-template-columns: 2fr 1fr 1fr 1fr;
-            gap: 3rem;
-            margin-bottom: 3rem;
+            grid-template-columns: 1.3fr 0.9fr 0.9fr 1fr;
+            margin-bottom: 32px;
         }
 
-        .footer-brand h3 {
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
-            color: var(--white);
+        .footer-brand {
+            padding-right: 20px;
         }
 
         .footer-brand p {
-            color: var(--gray-400);
-            line-height: 1.7;
-            margin-bottom: 1.5rem;
+            color: rgba(255, 255, 255, 0.64);
+            margin: 18px 0 22px;
+            max-width: 40ch;
         }
 
-        .footer-brand .logo-footer {
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-            margin-bottom: 1rem;
+        .footer-title {
+            font-size: 1rem;
+            font-weight: 800;
+            margin-bottom: 16px;
         }
 
-        .footer-brand .logo-footer img {
-            height: 60px;
-            width: auto;
-        }
-
-        .footer-links h4 {
-            font-size: 1.125rem;
-            margin-bottom: 1.5rem;
-            color: var(--white);
-        }
-
-        .footer-links ul {
+        .footer-links,
+        .footer-contact {
             list-style: none;
+            display: grid;
+            gap: 12px;
         }
 
-        .footer-links li {
-            margin-bottom: 0.75rem;
-        }
-
-        .footer-links a {
-            color: var(--gray-400);
+        .footer-links a,
+        .footer-contact a,
+        .footer-contact span {
+            color: rgba(255, 255, 255, 0.64);
             text-decoration: none;
-            transition: color 0.3s;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
+            transition: color 0.2s ease;
         }
 
-        .footer-links a:hover {
-            color: var(--primary-red);
-        }
-
-        .footer-links a::before {
-            content: '→';
-            opacity: 0;
-            transition: opacity 0.3s;
-        }
-
-        .footer-links a:hover::before {
-            opacity: 1;
+        .footer-links a:hover,
+        .footer-contact a:hover {
+            color: #fff;
         }
 
         .footer-bottom {
-            border-top: 1px solid var(--gray-800);
-            padding-top: 2rem;
+            padding-top: 24px;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
             display: flex;
             justify-content: space-between;
             align-items: center;
+            gap: 14px;
             flex-wrap: wrap;
-            gap: 1rem;
-            color: var(--gray-400);
+            color: rgba(255, 255, 255, 0.5);
             font-size: 0.9rem;
         }
 
-        /* WhatsApp Float */
-        .whatsapp-float {
+        .floating-contact {
             position: fixed;
-            bottom: 30px;
-            right: 30px;
-            width: 60px;
-            height: 60px;
-            background: #25D366;
-            color: var(--white);
-            border-radius: 50%;
-            display: flex;
+            right: 18px;
+            bottom: 18px;
+            z-index: 950;
+            display: grid;
+            gap: 10px;
+        }
+
+        .floating-link {
+            display: inline-flex;
             align-items: center;
-            justify-content: center;
-            font-size: 2rem;
+            gap: 10px;
+            min-height: 54px;
+            padding: 0 1rem;
+            border-radius: 999px;
+            box-shadow: 0 20px 36px rgba(17, 18, 20, 0.16);
             text-decoration: none;
-            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
-            transition: all 0.3s;
-            z-index: 999;
-            animation: pulse 2s infinite;
+            color: #fff;
+            font-weight: 800;
         }
 
-        .whatsapp-float:hover {
-            transform: scale(1.1);
-            background: #128C7E;
+        .floating-link.phone {
+            background: linear-gradient(135deg, #121316 0%, #282c32 100%);
         }
 
-        @keyframes pulse {
-            0%, 100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
-            50% { box-shadow: 0 0 0 20px rgba(37, 211, 102, 0); }
+        .floating-link.whatsapp {
+            background: linear-gradient(135deg, #20b45f 0%, #188a49 100%);
         }
 
-        /* Mobile Responsive */
-        @media (max-width: 968px) {
-            .hero-content,
+        [data-reveal] {
+            opacity: 0;
+            transform: translateY(24px);
+            transition: opacity 0.55s ease, transform 0.55s ease;
+        }
+
+        [data-reveal].is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        @media (max-width: 1120px) {
+            .hero-grid,
             .about-grid,
-            .contact-grid {
+            .faq-grid,
+            .contact-layout,
+            .categories-layout {
                 grid-template-columns: 1fr;
             }
 
-            .hero-text h1 {
-                font-size: 2.5rem;
+            .hero-copy {
+                order: 1;
             }
 
-            .hero-logo {
-                width: 200px;
+            .hero-panel {
+                order: 2;
             }
 
-            .nav-links {
-                display: none;
-                position: absolute;
-                top: 100%;
-                left: 0;
-                right: 0;
-                background: var(--white);
-                flex-direction: column;
-                padding: 2rem;
-                box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            .categories-intro {
+                position: static;
             }
 
-            .nav-links.active {
-                display: flex;
-            }
-
-            .mobile-menu-btn {
-                display: block;
-            }
-
+            .why-grid,
+            .featured-grid,
+            .process-grid,
             .footer-grid {
-                grid-template-columns: 1fr 1fr;
-            }
-
-            .about-features {
-                grid-template-columns: 1fr;
-            }
-
-            .experience-badge {
-                left: 50%;
-                transform: translateX(-50%);
+                grid-template-columns: repeat(2, minmax(0, 1fr));
             }
         }
 
-        @media (max-width: 640px) {
-            .hero-stats {
-                grid-template-columns: 1fr;
+        @media (max-width: 920px) {
+            .nav {
+                min-height: 74px;
             }
 
-            .footer-grid {
-                grid-template-columns: 1fr;
+            .mobile-toggle {
+                display: inline-grid;
+                place-items: center;
             }
 
-            .top-bar-content {
+            .header-actions .btn {
+                display: none;
+            }
+
+            .nav-menu {
+                position: fixed;
+                inset: 74px 16px auto 16px;
+                display: grid;
+                gap: 8px;
+                padding: 16px;
+                border-radius: 26px;
+                background: rgba(255, 255, 255, 0.97);
+                border: 1px solid rgba(17, 18, 20, 0.08);
+                box-shadow: var(--shadow-lg);
+                transform: translateY(-18px);
+                opacity: 0;
+                pointer-events: none;
+                transition: transform 0.22s ease, opacity 0.22s ease;
+            }
+
+            .nav-menu.is-open {
+                transform: translateY(0);
+                opacity: 1;
+                pointer-events: auto;
+            }
+
+            .nav-link {
+                display: block;
+                padding: 0.9rem 0.95rem;
+                border-radius: 16px;
+                background: rgba(17, 18, 20, 0.03);
+            }
+
+            .nav-link::after {
+                display: none;
+            }
+
+            .topbar-inner {
                 justify-content: center;
                 text-align: center;
             }
 
-            .logo-text .main {
-                font-size: 1.2rem;
+            .hero-expertise,
+            .panel-footer,
+            .form-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
             }
         }
 
-        /* Animations */
-        .fade-in {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: opacity 0.6s, transform 0.6s;
+        @media (max-width: 720px) {
+            .section {
+                padding: 82px 0;
+            }
+
+            .hero {
+                padding-bottom: 86px;
+            }
+
+            .hero-panel,
+            .about-panel,
+            .categories-intro,
+            .contact-form,
+            .faq-aside {
+                padding: 24px;
+            }
+
+            .hero-expertise,
+            .metric-grid,
+            .stats-grid,
+            .categories-grid,
+            .why-grid,
+            .featured-grid,
+            .process-grid,
+            .footer-grid,
+            .panel-footer,
+            .form-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-panel-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .panel-head,
+            .featured-meta,
+            .form-actions,
+            .footer-bottom {
+                align-items: flex-start;
+                flex-direction: column;
+            }
+
+            .floating-contact {
+                right: 14px;
+                bottom: 14px;
+            }
+
+            .floating-link span {
+                display: none;
+            }
+
+            .floating-link {
+                width: 54px;
+                justify-content: center;
+                padding: 0;
+            }
         }
 
-        .fade-in.visible {
-            opacity: 1;
-            transform: translateY(0);
+        @media (prefers-reduced-motion: reduce) {
+            html {
+                scroll-behavior: auto;
+            }
+
+            *,
+            *::before,
+            *::after {
+                animation: none !important;
+                transition: none !important;
+            }
+
+            [data-reveal] {
+                opacity: 1;
+                transform: none;
+            }
         }
     </style>
 </head>
 <body>
+    <a class="skip-link" href="#main-content">Ana içeriğe geç</a>
 
-    <!-- Top Bar -->
-    <div class="top-bar">
-        <div class="top-bar-content">
-            <div>
-                <a href="tel:+902126427550"><i class="fas fa-phone"></i> (0212) 642 7550</a>
-                <span style="margin: 0 1rem;">|</span>
-                <a href="mailto:info@viphayvancilik.com.tr"><i class="fas fa-envelope"></i> info@viphayvancilik.com.tr</a>
+    <div class="topbar">
+        <div class="container topbar-inner">
+            <div class="topbar-meta">
+                <a class="topbar-item" href="tel:+902126427550">
+                    <i class="fa-solid fa-phone-volume" aria-hidden="true"></i>
+                    <span>(0212) 642 7550</span>
+                </a>
+                <a class="topbar-item" href="mailto:info@viphayvancilik.com.tr">
+                    <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                    <span>info@viphayvancilik.com.tr</span>
+                </a>
+                <span class="topbar-item">
+                    <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                    <span>Beylikdüzü, İstanbul</span>
+                </span>
             </div>
-            <div>
-                <span><i class="fas fa-map-marker-alt"></i> Beylikdüzü, İstanbul</span>
+            <div class="topbar-trust" aria-label="Güven unsurları">
+                <span class="topbar-pill"><i class="fa-solid fa-shield-heart" aria-hidden="true"></i> Orijinal ürün yaklaşımı</span>
+                <span class="topbar-pill"><i class="fa-solid fa-snowflake" aria-hidden="true"></i> Soğuk zincir takibi</span>
+                <span class="topbar-pill"><i class="fa-solid fa-user-doctor" aria-hidden="true"></i> Uzman teknik destek</span>
             </div>
         </div>
     </div>
 
-    <!-- Navigation -->
-    <header>
-        <nav>
-            <a href="#" class="logo">
-                <img src="https://lincmedipharma-wq.github.io/viphayvancilik/logo.png" alt="VIP Hayvancılık Logo">
-                <div class="logo-text">
-                    <span class="main">VIP HAYVANCILIK</span>
-                    <span class="sub">Ecza Deposu</span>
+    <header class="site-header" id="siteHeader">
+        <div class="container">
+            <nav class="nav" aria-label="Ana menü">
+                <a class="brand" href="#home" aria-label="VIP Hayvancılık ana sayfa">
+                    <span class="brand-mark" aria-hidden="true">VIP</span>
+                    <span class="brand-text">
+                        <span class="brand-title">VIP HAYVANCILIK</span>
+                        <span class="brand-subtitle">Veteriner Medikal Tedarik</span>
+                    </span>
+                </a>
+
+                <ul class="nav-menu" id="navMenu">
+                    <li><a class="nav-link" href="#home">Ana Sayfa</a></li>
+                    <li><a class="nav-link" href="#neden-biz">Neden Biz</a></li>
+                    <li><a class="nav-link" href="#kategoriler">Ürün Alanları</a></li>
+                    <li><a class="nav-link" href="#urunler">Öne Çıkan Gruplar</a></li>
+                    <li><a class="nav-link" href="#kurumsal">Kurumsal</a></li>
+                    <li><a class="nav-link" href="#sss">SSS</a></li>
+                    <li><a class="nav-link" href="#iletisim">İletişim</a></li>
+                </ul>
+
+                <div class="header-actions">
+                    <a class="btn" href="tel:+902126427550">
+                        <i class="fa-solid fa-phone" aria-hidden="true"></i>
+                        <span>Hemen Arayın</span>
+                    </a>
+                    <button class="mobile-toggle" id="mobileToggle" aria-label="Menüyü aç" aria-expanded="false" aria-controls="navMenu">
+                        <i class="fa-solid fa-bars" aria-hidden="true"></i>
+                    </button>
                 </div>
-            </a>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#home">Ana Sayfa</a></li>
-                <li><a href="#products">Ürünler</a></li>
-                <li><a href="#about">Hakkımızda</a></li>
-                <li><a href="#contact">İletişim</a></li>
-                <li><a href="tel:+902126427550" class="btn btn-primary" style="padding: 0.5rem 1rem; font-size: 0.9rem;">
-                    <i class="fas fa-phone"></i> Hemen Ara
-                </a></li>
-            </ul>
-            <button class="mobile-menu-btn" onclick="toggleMenu()">
-                <i class="fas fa-bars"></i>
-            </button>
-        </nav>
+            </nav>
+        </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="hero-content">
-            <div class="hero-text">
-                <h1>Veteriner Medikal <span>Çözümleri</span></h1>
-                <p>2007'den beri İstanbul Beylikdüzü'nde 3 veteriner hekim ortaklığı ile kaliteli ilaç, aşı ve medikal ürün tedariği. Hayvancılık sektörünün güvenilir çözüm ortağı.</p>
-                <div class="hero-buttons">
-                    <a href="#products" class="btn btn-primary">
-                        <i class="fas fa-box-open"></i> Ürünleri İncele
-                    </a>
-                    <a href="https://wa.me/902126427550" class="btn btn-secondary" target="_blank">
-                        <i class="fab fa-whatsapp"></i> WhatsApp
-                    </a>
-                </div>
-                <div class="hero-stats">
-                    <div class="stat-item">
-                        <span class="stat-number">18+</span>
-                        <span class="stat-label">Yıllık Deneyim</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-number">500+</span>
-                        <span class="stat-label">Ürün Çeşidi</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-number">3</span>
-                        <span class="stat-label">Veteriner Hekim</span>
-                    </div>
-                </div>
-            </div>
-            <div class="hero-image">
-                <img src="https://github.com/lincmedipharma-wq/viphayvancilik/blob/main/farmer-taking-care-photorealistic-goat-farm.png" alt="VIP Hayvancılık Logo" class="hero-logo">
-            </div>
-        </div>
-    </section>
-
-    <!-- Features Section -->
-    <section class="features">
-        <div class="container">
-            <div class="section-header">
-                <h2>Neden VIP Hayvancılık?</h2>
-                <p>18 yıllık tecrübemiz ve uzman kadromuzla hayvancılık sektörüne değer katıyoruz</p>
-            </div>
-            <div class="features-grid">
-                <div class="feature-card fade-in">
-                    <div class="feature-icon">
-                        <i class="fas fa-certificate"></i>
-                    </div>
-                    <h3>Lisanslı ve Güvenilir</h3>
-                    <p>T.C. Tarım ve Orman Bakanlığı ruhsatlı ecza deposu. Tüm ürünler orijinal ve bandrollü.</p>
-                </div>
-                <div class="feature-card fade-in">
-                    <div class="feature-icon">
-                        <i class="fas fa-truck-fast"></i>
-                    </div>
-                    <h3>Hızlı Teslimat</h3>
-                    <p>İstanbul ve çevre illere aynı gün teslimat. Türkiye'nin her yerine kargo imkanı.</p>
-                </div>
-                <div class="feature-card fade-in">
-                    <div class="feature-icon">
-                        <i class="fas fa-user-doctor"></i>
-                    </div>
-                    <h3>Uzman Danışmanlık</h3>
-                    <p>3 veteriner hekim ortaklığı ile profesyonel teknik destek ve danışmanlık hizmeti.</p>
-                </div>
-                <div class="feature-card fade-in">
-                    <div class="feature-icon">
-                        <i class="fas fa-cow"></i>
-                    </div>
-                    <h3>Özel Spermalar</h3>
-                    <p>Jersey, Holstein, Montofon, Limuzin gibi yerli ve ithal ırk spermaları.</p>
-                </div>
-                <div class="feature-card fade-in">
-                    <div class="feature-icon">
-                        <i class="fas fa-pills"></i>
-                    </div>
-                    <h3>Geniş Ürün Yelpazesi</h3>
-                    <p>Aşılardan medikal malzemelere, yem katkılarından bakım ürünlerine kadar her şey.</p>
-                </div>
-                <div class="feature-card fade-in">
-                    <div class="feature-icon">
-                        <i class="fas fa-handshake"></i>
-                    </div>
-                    <h3>Müşteri Memnuniyeti</h3>
-                    <p>7/24 ulaşılabilirlik ve satış sonrası destek ile yanınızdayız.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Products Section -->
-    <section class="products" id="products">
-        <div class="container">
-            <div class="section-header">
-                <h2>Ürün Kategorilerimiz</h2>
-                <p>Hayvancılık sektörünün ihtiyaç duyduğu tüm medikal ürünler</p>
-            </div>
-            
-            <div class="products-filter">
-                <button class="filter-btn active" onclick="filterProducts('all')">Tümü</button>
-                <button class="filter-btn" onclick="filterProducts('ilac')">İlaçlar</button>
-                <button class="filter-btn" onclick="filterProducts('asi')">Aşılar</button>
-                <button class="filter-btn" onclick="filterProducts('sperma')">Spermalar</button>
-                <button class="filter-btn" onclick="filterProducts('medikal')">Medikal</button>
-            </div>
-
-            <div class="products-grid" id="productsGrid">
-                <div class="product-card" data-category="sperma">
-                    <div class="product-image">
-                        <i class="fas fa-dna"></i>
-                        <span class="product-badge">İthal</span>
-                    </div>
-                    <div class="product-info">
-                        <div class="product-category">Spermalar</div>
-                        <h3>Holstein Sperması</h3>
-                        <p>Yüksek verimli ithal Holstein ırkı spermaları. Kanada ve ABD menşeli.</p>
-                        <a href="https://wa.me/902126427550?text=Holstein sperması hakkında bilgi almak istiyorum" class="product-btn" target="_blank">
-                            Bilgi Al <i class="fas fa-arrow-right"></i>
+    <main id="main-content">
+        <section class="hero" id="home" aria-labelledby="hero-title">
+            <div class="container hero-grid">
+                <div class="hero-copy" data-reveal>
+                    <span class="hero-eyebrow">
+                        <i class="fa-solid fa-building-shield" aria-hidden="true"></i>
+                        Veteriner medikal ve hayvancılık ekipmanlarında kurumsal çözüm ortağı
+                    </span>
+                    <h1 id="hero-title">Sahadaki ihtiyaca uygun <span>güvenilir tedarik</span> altyapısı.</h1>
+                    <p class="hero-intro">
+                        VIP Hayvancılık; veteriner ilaçları, aşılar, spermalar, medikal ürünler, cerrahi sarf malzemeleri, cihazlar, mikroçipler ve hayvancılık ekipmanlarında profesyonel, düzenli ve güven veren bir tedarik yaklaşımı sunar. Hedefimiz yalnızca ürün sağlamak değil, doğru ürüne hızlı ve kontrollü erişim sağlamaktır.
+                    </p>
+                    <div class="hero-actions">
+                        <a class="btn" href="tel:+902126427550">
+                            <i class="fa-solid fa-phone-volume" aria-hidden="true"></i>
+                            Telefon ile Hızlı Erişim
+                        </a>
+                        <a class="btn-subtle" href="https://wa.me/902126427550?text=Merhaba%2C%20VIP%20Hayvanc%C4%B1l%C4%B1k%20hizmetleri%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+                            WhatsApp ile Yazın
+                        </a>
+                        <a class="btn-subtle" href="#urunler">
+                            <i class="fa-solid fa-layer-group" aria-hidden="true"></i>
+                            Ürün Gruplarını İnceleyin
                         </a>
                     </div>
-                </div>
-
-                <div class="product-card" data-category="sperma">
-                    <div class="product-image">
-                        <i class="fas fa-dna"></i>
-                        <span class="product-badge">Yerli</span>
+                    <div class="trust-row" aria-label="Öne çıkan güven unsurları">
+                        <span class="trust-chip"><i class="fa-solid fa-certificate" aria-hidden="true"></i> Kurumsal tedarik disiplini</span>
+                        <span class="trust-chip"><i class="fa-solid fa-boxes-stacked" aria-hidden="true"></i> Geniş ürün grubu yaklaşımı</span>
+                        <span class="trust-chip"><i class="fa-solid fa-headset" aria-hidden="true"></i> Teknik destek ve hızlı iletişim</span>
                     </div>
-                    <div class="product-info">
-                        <div class="product-category">Spermalar</div>
-                        <h3>Jersey Sperması</h3>
-                        <p>Yerli üretim Jersey ırkı spermaları. Yüksek yağ oranı süt verimi.</p>
-                        <a href="https://wa.me/902126427550?text=Jersey sperması hakkında bilgi almak istiyorum" class="product-btn" target="_blank">
-                            Bilgi Al <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="product-card" data-category="ilac">
-                    <div class="product-image">
-                        <i class="fas fa-syringe"></i>
-                    </div>
-                    <div class="product-info">
-                        <div class="product-category">İlaçlar</div>
-                        <h3>Antibiyotikler</h3>
-                        <p>Geniş spektrumlu veteriner antibiyotikleri. Enjeksiyon ve oral formlar.</p>
-                        <a href="https://wa.me/902126427550?text=Antibiyotik ürünleri hakkında bilgi almak istiyorum" class="product-btn" target="_blank">
-                            Bilgi Al <i class="fas fa-arrow-right"></i>
-                        </a>
+                    <div class="hero-expertise">
+                        <article class="expertise-card">
+                            <strong>Veteriner İlaç ve Aşı</strong>
+                            <p>Koruyucu sağlık ve tedavi süreçlerinde ihtiyaç duyulan temel tedarik grupları.</p>
+                        </article>
+                        <article class="expertise-card">
+                            <strong>Genetik ve Islah Ürünleri</strong>
+                            <p>Spermalar ve yardımcı ekipmanlarla profesyonel damızlık süreç desteği.</p>
+                        </article>
+                        <article class="expertise-card">
+                            <strong>Ekipman ve Sarf</strong>
+                            <p>Cihazlar, cerrahi ürünler, mikroçip çözümleri ve saha ekipmanları tek yapıda.</p>
+                        </article>
                     </div>
                 </div>
 
-                <div class="product-card" data-category="asi">
-                    <div class="product-image">
-                        <i class="fas fa-shield-virus"></i>
+                <aside class="hero-panel" aria-label="Kurumsal tedarik özeti" data-reveal>
+                    <div class="panel-head">
+                        <div>
+                            <span class="panel-badge"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i> VIP Güvence</span>
+                            <h2>Talepten teslimata kadar kontrollü işleyiş</h2>
+                        </div>
                     </div>
-                    <div class="product-info">
-                        <div class="product-category">Aşılar</div>
-                        <h3>Şap Aşısı</h3>
-                        <p>Büyükbaş ve küçükbaş hayvanlar için şap aşıları. Yıllık bağışıklık programları.</p>
-                        <a href="https://wa.me/902126427550?text=Aşı ürünleri hakkında bilgi almak istiyorum" class="product-btn" target="_blank">
-                            Bilgi Al <i class="fas fa-arrow-right"></i>
-                        </a>
+                    <div class="hero-panel-grid">
+                        <div class="panel-card">
+                            <div class="panel-card-title">Operasyon Özeti</div>
+                            <div class="metric-grid">
+                                <div class="metric">
+                                    <strong>2007</strong>
+                                    <span>Kuruluş yılı</span>
+                                </div>
+                                <div class="metric">
+                                    <strong>3</strong>
+                                    <span>Veteriner hekim ortaklığı</span>
+                                </div>
+                                <div class="metric">
+                                    <strong>10+</strong>
+                                    <span>Ana ürün ve hizmet alanı</span>
+                                </div>
+                                <div class="metric">
+                                    <strong>Tek Hat</strong>
+                                    <span>Telefon, e-posta, WhatsApp erişimi</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel-card">
+                            <div class="panel-card-title">Uzmanlık Odakları</div>
+                            <ul class="panel-list">
+                                <li>
+                                    <i class="fa-solid fa-vial-virus" aria-hidden="true"></i>
+                                    <div>
+                                        <strong>Aşı ve biyolojik ürünler</strong>
+                                        <span>Saklama ve sevk hassasiyeti yüksek ürün yönetimi</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-dna" aria-hidden="true"></i>
+                                    <div>
+                                        <strong>Sperma ve ıslah materyalleri</strong>
+                                        <span>Yetiştiricilik süreçlerine uygun ürün yönlendirmesi</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-microchip" aria-hidden="true"></i>
+                                    <div>
+                                        <strong>Mikroçip ve okuyucular</strong>
+                                        <span>Kimliklendirme ve takip çözümlerinde erişilebilir tedarik</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
+                    <div class="panel-footer">
+                        <div class="panel-foot-card">
+                            <strong>Orijinal Ürün</strong>
+                            <span>Kurumsal güven odaklı ürün yaklaşımı</span>
+                        </div>
+                        <div class="panel-foot-card">
+                            <strong>Hızlı Ulaşım</strong>
+                            <span>Talebe göre hızlı geri dönüş süreci</span>
+                        </div>
+                        <div class="panel-foot-card">
+                            <strong>Teknik İletişim</strong>
+                            <span>Sahaya uygun ürün yönlendirmesi</span>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </section>
 
-                <div class="product-card" data-category="medikal">
-                    <div class="product-image">
-                        <i class="fas fa-stethoscope"></i>
-                    </div>
-                    <div class="product-info">
-                        <div class="product-category">Medikal</div>
-                        <h3>Muayene Malzemeleri</h3>
-                        <p>Stetoskop, termometre, enjektör ve tüm muayene ekipmanları.</p>
-                        <a href="https://wa.me/902126427550?text=Medikal malzemeler hakkında bilgi almak istiyorum" class="product-btn" target="_blank">
-                            Bilgi Al <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
+        <section class="section why-us" id="neden-biz" aria-labelledby="why-title">
+            <div class="container">
+                <div class="section-header" data-reveal>
+                    <span class="section-kicker">Neden Bizi Tercih Etmelisiniz</span>
+                    <h2 id="why-title">Kurumsal güveni görünür kılan, profesyonel ve sürdürülebilir tedarik yaklaşımı.</h2>
+                    <p>VIP Hayvancılık, ürün çeşitliliğini tek başına bir avantaj olarak sunmaz; bu çeşitliliği güvenilir tedarik, düzenli iletişim ve sahaya uygun yönlendirme ile birlikte ele alır.</p>
                 </div>
+                <div class="why-grid">
+                    <article class="why-card" data-reveal>
+                        <div class="card-icon"><i class="fa-solid fa-medal" aria-hidden="true"></i></div>
+                        <h3>Tecrübeye Dayalı Operasyon</h3>
+                        <p>Kuruluşundan bu yana veteriner medikal ve hayvancılık ürün tedariğine odaklanan yapı ile talep süreçleri daha kontrollü ve daha doğru yönetilir.</p>
+                    </article>
+                    <article class="why-card" data-reveal>
+                        <div class="card-icon"><i class="fa-solid fa-truck-ramp-box" aria-hidden="true"></i></div>
+                        <h3>Güvenilir Tedarik Disiplini</h3>
+                        <p>Ürünlerin doğru kanallardan, düzenli ve profesyonel süreçlerle yönetilmesi; müşteri tarafında güven hissini güçlendirir.</p>
+                    </article>
+                    <article class="why-card" data-reveal>
+                        <div class="card-icon"><i class="fa-solid fa-boxes-stacked" aria-hidden="true"></i></div>
+                        <h3>Geniş Ürün Yelpazesi</h3>
+                        <p>İlaç, aşı, sperma, mikroçip, cerrahi sarf ve ekipman gibi farklı ihtiyaçları tek çatı altında değerlendirebilirsiniz.</p>
+                    </article>
+                    <article class="why-card" data-reveal>
+                        <div class="card-icon"><i class="fa-solid fa-headset" aria-hidden="true"></i></div>
+                        <h3>Teknik Destek ve Yönlendirme</h3>
+                        <p>Ürün seçiminde sadece satış değil; kullanım alanı, operasyon ihtiyacı ve ürün uygunluğu da dikkate alınır.</p>
+                    </article>
+                    <article class="why-card" data-reveal>
+                        <div class="card-icon"><i class="fa-solid fa-phone-flip" aria-hidden="true"></i></div>
+                        <h3>Hızlı Erişim ve Geri Dönüş</h3>
+                        <p>Telefon ve WhatsApp üzerinden hızlı iletişim imkanı, günlük ihtiyaçlarda sahadaki karar süresini kısaltır.</p>
+                    </article>
+                    <article class="why-card" data-reveal>
+                        <div class="card-icon"><i class="fa-solid fa-shield-heart" aria-hidden="true"></i></div>
+                        <h3>Orijinal Ürün Yaklaşımı</h3>
+                        <p>Kurumsal çizgi; üründe güven, açıklık ve devamlılık beklentisini karşılayan bir tedarik anlayışı üzerine kuruludur.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-                <div class="product-card" data-category="ilac">
-                    <div class="product-image">
-                        <i class="fas fa-capsules"></i>
-                        <span class="product-badge">VIP</span>
+        <section class="section" id="kategoriler" aria-labelledby="categories-title">
+            <div class="container">
+                <div class="categories-layout">
+                    <div class="categories-intro" data-reveal>
+                        <span class="section-kicker">Ürün ve Hizmet Alanları</span>
+                        <h2 id="categories-title">Sektörün farklı ihtiyaçları için modüler ve genişletilebilir ürün yapısı.</h2>
+                        <p>Bu bölüm, müşteri kataloğu netleştiğinde yalnızca veri güncellemesi ile rahatça genişletilebilecek şekilde kurgulandı. Böylece mevcut sunum kalitesi korunurken yeni ürün ekleme süreci de pratik hale gelir.</p>
+                        <ul class="intro-list">
+                            <li>
+                                <i class="fa-solid fa-layer-group" aria-hidden="true"></i>
+                                <div>
+                                    <strong>Kategori bazlı net ayrım</strong>
+                                    <p>Farklı ürün kümeleri kendi uzmanlık alanlarıyla birlikte sunulur.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-filter-circle-dollar" aria-hidden="true"></i>
+                                <div>
+                                    <strong>Filtrelenebilir ürün mimarisi</strong>
+                                    <p>Yeni katalog eklendiğinde yalnızca veri seti güncellenerek ölçeklenebilir.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-arrows-spin" aria-hidden="true"></i>
+                                <div>
+                                    <strong>Reusable kart yapısı</strong>
+                                    <p>Ürün kartları aynı sistemle yeniden kullanılabilir ve çoğaltılabilir.</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="cta-actions">
+                            <a class="btn" href="#urunler">Örnek Ürün Grupları</a>
+                            <a class="btn-ghost" href="https://wa.me/902126427550?text=Merhaba%2C%20kategori%20yap%C4%B1n%C4%B1z%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener noreferrer">WhatsApp ile Sorun</a>
+                        </div>
                     </div>
-                    <div class="product-info">
-                        <div class="product-category">Özel Ürün</div>
-                        <h3>VIP Inject Serisi</h3>
-                        <p>Firma özel üretimi vitamin ve mineral enjeksiyonları. Özel formüller.</p>
-                        <a href="https://wa.me/902126427550?text=VIP Inject ürünleri hakkında bilgi almak istiyorum" class="product-btn" target="_blank">
-                            Bilgi Al <i class="fas fa-arrow-right"></i>
-                        </a>
+                    <div class="categories-grid" id="categoriesGrid" aria-live="polite"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section featured-section" id="urunler" aria-labelledby="featured-title">
+            <div class="container">
+                <div class="section-header" data-reveal>
+                    <span class="section-kicker">Öne Çıkan Ürün Grupları</span>
+                    <h2 id="featured-title">Temsili ürün kartlarıyla bugünü sunan, gerçek katalog için yarını hazır bırakan yapı.</h2>
+                    <p>Buradaki kartlar temsili ürün gruplarını göstermektedir. Sonraki aşamada gerçek katalog geldiğinde aynı kart sistemi korunarak içerik büyütülebilir, filtreler genişletilebilir ve bölüm kolayca güncellenebilir.</p>
+                </div>
+                <div class="filter-row" id="filterRow" aria-label="Ürün filtreleri"></div>
+                <div class="featured-grid" id="featuredGrid" aria-live="polite"></div>
+            </div>
+        </section>
+
+        <section class="section" id="kurumsal" aria-labelledby="about-title">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-panel about-copy" data-reveal>
+                        <span class="section-kicker">Kurumsal Hakkımızda</span>
+                        <h2 id="about-title">VIP Hayvancılık, yalnızca ürün sağlayan değil; güven duygusu oluşturan bir tedarik ortağı olarak konumlanır.</h2>
+                        <p>Firma yapısı; veteriner medikal ürünler ile hayvancılık ekipmanlarını tek başlıkta toplamaktan öte, bunları kurumsal disiplin, doğru yönlendirme ve profesyonel iletişimle sunma anlayışına dayanır. Bu nedenle site dili ve kurgusu da “tek sayfa ajans demosu” hissinden uzak, sektörde yıllardır faaliyet gösteren bir firma algısını taşıyacak biçimde tasarlanmıştır.</p>
+                        <p>Veteriner ilaçlarından aşılara, spermadan mikroçip çözümlerine, cerrahi ipliklerden tırnak bakım ürünlerine kadar uzanan ürün alanları; sahadaki pratik ihtiyaca cevap verecek şekilde ele alınmıştır. Amaç yalnızca çeşit sunmak değil, ihtiyaç anında güvenilir erişim sağlamaktır.</p>
+                        <div class="about-tags">
+                            <span class="chip"><i class="fa-solid fa-building" aria-hidden="true"></i> Kurumsal kimlik</span>
+                            <span class="chip"><i class="fa-solid fa-user-doctor" aria-hidden="true"></i> Uzmanlık yaklaşımı</span>
+                            <span class="chip"><i class="fa-solid fa-clipboard-check" aria-hidden="true"></i> Düzenli süreç yönetimi</span>
+                        </div>
+                        <div class="stats-grid">
+                            <article class="about-stat">
+                                <strong>2007</strong>
+                                <span>Kuruluş yılı ile sektörel süreklilik vurgusu</span>
+                            </article>
+                            <article class="about-stat">
+                                <strong>3</strong>
+                                <span>Veteriner hekim ortaklığı ile mesleki bakış açısı</span>
+                            </article>
+                            <article class="about-stat">
+                                <strong>10+</strong>
+                                <span>Genişletilebilir ana ürün ve hizmet kategorisi</span>
+                            </article>
+                            <article class="about-stat">
+                                <strong>Çok Kanal</strong>
+                                <p>Telefon, e-posta ve WhatsApp ile erişilebilir iletişim yapısı</p>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="about-side">
+                        <article class="about-feature-card" data-reveal>
+                            <h3>Tedarikte güveni destekleyen ana ilkeler</h3>
+                            <p>Site kurgusundaki her blok, VIP Hayvancılık’ın kurumsal güven, profesyonel görünüm ve erişilebilir iletişim hedeflerini destekleyecek biçimde yapılandırıldı.</p>
+                            <ul class="about-checklist">
+                                <li>
+                                    <i class="fa-solid fa-check" aria-hidden="true"></i>
+                                    <div>
+                                        <strong>Profesyonel bilgi mimarisi</strong>
+                                        <span>Yoğun ama dağınık olmayan içerik düzeni.</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-check" aria-hidden="true"></i>
+                                    <div>
+                                        <strong>Kurumsal tasarım dengesi</strong>
+                                        <span>Koyu tonlar, beyaz zemin ve kırmızı vurgu ile premium görünüm.</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-check" aria-hidden="true"></i>
+                                    <div>
+                                        <strong>Genişlemeye hazır ürün altyapısı</strong>
+                                        <span>Katalog büyüdükçe aynı yapı sürdürülebilir.</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </article>
+                        <article class="about-panel" data-reveal>
+                            <h3 style="margin-bottom: 12px;">Kurumsal sunum için doğru ton</h3>
+                            <p style="color: var(--text-soft); margin-bottom: 16px;">Hazırlanan sayfa, müşteri karşısında güven veren bir tedarik firması hissini ilk bakışta oluşturacak şekilde dengeli boşluk, güçlü başlık yapısı, kontrollü hareket ve rafine kart düzeniyle tasarlandı.</p>
+                            <div class="about-tags">
+                                <span class="chip">Premium görünüm</span>
+                                <span class="chip">Mobil odaklı deneyim</span>
+                                <span class="chip">Sunuma hazır kalite</span>
+                            </div>
+                        </article>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- About Section -->
-    <section class="about" id="about">
-        <div class="container">
-            <div class="about-grid">
-                <div class="about-content">
-                    <h2>18 Yıllık <span>Tecrübe</span></h2>
-                    <p>2007 yılında 3 veteriner hekim ortaklığı olarak kurulan VIP Hayvancılık, İstanbul Beylikdüzü'nde faaliyet gösteren lisanslı bir veteriner medikal ve ecza deposudur.</p>
-                    <p>T.C. Tarım ve Orman Bakanlığı ruhsatlı işletmemizde, büyükbaş ve küçükbaş hayvancılık sektörüne yönelik ilaç, aşı, medikal malzeme ve ıslah materyalleri tedariği yapmaktayız.</p>
-                    
-                    <div class="about-features">
-                        <div class="about-feature">
-                            <i class="fas fa-check-circle"></i>
-                            <div>
-                                <strong>Bakanlık Ruhsatlı</strong>
-                                <span>Tüm belgeler tam ve güncel</span>
-                            </div>
-                        </div>
-                        <div class="about-feature">
-                            <i class="fas fa-check-circle"></i>
-                            <div>
-                                <strong>Orijinal Ürün</strong>
-                                <span>Bandrollü ve seri numaralı</span>
-                            </div>
-                        </div>
-                        <div class="about-feature">
-                            <i class="fas fa-check-circle"></i>
-                            <div>
-                                <strong>Soğuk Zincir</strong>
-                                <span>Aşı ve biyolojik ürünlerde</span>
-                            </div>
-                        </div>
-                        <div class="about-feature">
-                            <i class="fas fa-check-circle"></i>
-                            <div>
-                                <strong>Teknik Destek</strong>
-                                <span>Uzman veteriner danışmanlığı</span>
-                            </div>
-                        </div>
-                    </div>
+        <section class="section" id="surec" aria-labelledby="process-title">
+            <div class="container">
+                <div class="section-header" data-reveal>
+                    <span class="section-kicker">İşleyiş</span>
+                    <h2 id="process-title">Düzenli ve kurumsal çalışma biçimini gösteren sade ama güven veren süreç akışı.</h2>
+                    <p>VIP Hayvancılık’ın çalışma mantığı, talebi hızlıca almakla kalmaz; uygun ürün belirleme, tedarik, teslimat ve destek aşamalarını da aynı ciddiyetle ele alır.</p>
                 </div>
-                <div class="about-image">
-                    <img src="https://images.unsplash.com/photo-1559757175-5700dde675bc?w=600&h=500&fit=crop" alt="VIP Hayvancılık Depo">
-                    <div class="experience-badge">
-                        <span class="years">18</span>
-                        <span class="text">Yıllık<br>Deneyim</span>
-                    </div>
+                <div class="process-grid">
+                    <article class="process-card" data-reveal>
+                        <span class="process-step">01</span>
+                        <h3>Talebi Al</h3>
+                        <p>Telefon, e-posta veya WhatsApp üzerinden gelen ihtiyaç net biçimde kayıt altına alınır.</p>
+                    </article>
+                    <article class="process-card" data-reveal>
+                        <span class="process-step">02</span>
+                        <h3>Ürünü Belirle</h3>
+                        <p>İhtiyaca uygun ürün grubu veya alternatif çözüm profesyonel şekilde yönlendirilir.</p>
+                    </article>
+                    <article class="process-card" data-reveal>
+                        <span class="process-step">03</span>
+                        <h3>Tedarik Et</h3>
+                        <p>Uygun tedarik planı doğrultusunda ürün hazırlık ve sevk süreci organize edilir.</p>
+                    </article>
+                    <article class="process-card" data-reveal>
+                        <span class="process-step">04</span>
+                        <h3>Teslim Et</h3>
+                        <p>Operasyonun niteliğine göre hızlı ve kontrollü teslimat yaklaşımı uygulanır.</p>
+                    </article>
+                    <article class="process-card" data-reveal>
+                        <span class="process-step">05</span>
+                        <h3>Destek Ver</h3>
+                        <p>Satış sonrası iletişim açık tutulur; ek talep ve teknik sorular için erişim devam eder.</p>
+                    </article>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
-        <div class="container">
-            <div class="contact-grid">
-                <div class="contact-info">
-                    <h2>Bize Ulaşın</h2>
-                    <p>Sorularınız için 7/24 bize ulaşabilirsiniz. WhatsApp hattımızdan hızlı destek alın.</p>
-                    
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <i class="fas fa-location-dot"></i>
-                            <div>
-                                <strong>Adres</strong>
-                                <span>Adnan Kahveci Mah., Çankaya Cad. No:3, Beylikdüzü, İstanbul</span>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-phone"></i>
-                            <div>
-                                <strong>Telefon</strong>
-                                <a href="tel:+902126427550">(0212) 642 7550</a><br>
-                                <a href="tel:+902126427558">(0212) 642 7558</a>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-fax"></i>
-                            <div>
-                                <strong>Faks</strong>
-                                <span>(0212) 504 1898</span>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <div>
-                                <strong>E-posta</strong>
-                                <a href="mailto:info@viphayvancilik.com.tr">info@viphayvancilik.com.tr</a>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-clock"></i>
-                            <div>
-                                <strong>Çalışma Saatleri</strong>
-                                <span>Pzt-Cuma: 08:30 - 18:00<br>Cumartesi: 09:00 - 14:00</span>
-                            </div>
-                        </div>
+        <section class="section featured-section" id="sss" aria-labelledby="faq-title">
+            <div class="container faq-grid">
+                <aside class="faq-aside" data-reveal>
+                    <span class="section-kicker">Sık Sorulan Sorular</span>
+                    <h2 id="faq-title">Müşterilerin en çok sorduğu başlıkları sade ve güven veren yanıtlarla toparladık.</h2>
+                    <p>Sunum anında ya da gerçek kullanımda, ziyaretçinin aklındaki temel soru işaretlerini hızlıca gidermek için yapılandırılmış bir SSS alanı hazırlandı.</p>
+                    <div class="cta-actions">
+                        <a class="btn" href="tel:+902126427550">Telefon ile Sorun</a>
+                        <a class="btn-ghost" href="https://wa.me/902126427550?text=Merhaba%2C%20s%C4%B1k%20sorulan%20sorular%20d%C4%B1%C5%9F%C4%B1nda%20bir%20konuda%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener noreferrer">WhatsApp</a>
                     </div>
-
-                    <div class="social-links">
-                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="https://wa.me/902126427550" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-                    </div>
-                </div>
-
-                <div class="contact-form">
-                    <h3>Hızlı İletişim Formu</h3>
-                    <form onsubmit="handleSubmit(event)">
-                        <div class="form-group">
-                            <label for="name">Adınız Soyadınız *</label>
-                            <input type="text" id="name" name="name" required placeholder="Adınız Soyadınız">
-                        </div>
-                        <div class="form-group">
-                            <label for="phone">Telefon Numaranız *</label>
-                            <input type="tel" id="phone" name="phone" required placeholder="05XX XXX XX XX">
-                        </div>
-                        <div class="form-group">
-                            <label for="email">E-posta Adresiniz</label>
-                            <input type="email" id="email" name="email" placeholder="ornek@email.com">
-                        </div>
-                        <div class="form-group">
-                            <label for="subject">Konu</label>
-                            <select id="subject" name="subject">
-                                <option value="urun">Ürün Bilgisi</option>
-                                <option value="siparis">Sipariş</option>
-                                <option value="danismanlik">Danışmanlık</option>
-                                <option value="diger">Diğer</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Mesajınız</label>
-                            <textarea id="message" name="message" placeholder="Mesajınızı buraya yazın..."></textarea>
-                        </div>
-                        <button type="submit" class="submit-btn">
-                            <i class="fas fa-paper-plane"></i> Gönder
+                </aside>
+                <div class="faq-list" id="faqList">
+                    <article class="faq-item" data-reveal>
+                        <button class="faq-question" type="button" aria-expanded="true">
+                            <span>Hangi ürün gruplarında hizmet veriyorsunuz?</span>
+                            <i class="fa-solid fa-plus" aria-hidden="true"></i>
                         </button>
-                    </form>
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">
+                                Veteriner ilaçları, aşılar, spermalar, veteriner medikal ürünler, cerrahi iplikler, cihazlar, mikroçipler, okuyucular, yakalama aparatları, tırnak bakım ürünleri ve hayvancılık ekipmanları başta olmak üzere geniş bir ürün alanında çözüm sunulmaktadır.
+                            </div>
+                        </div>
+                    </article>
+                    <article class="faq-item" data-reveal>
+                        <button class="faq-question" type="button" aria-expanded="false">
+                            <span>Ürün bilgisi ve yönlendirme desteği alabilir miyim?</span>
+                            <i class="fa-solid fa-plus" aria-hidden="true"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">
+                                Evet. Ürün grupları, kullanım amacı ve ihtiyaç yapısı doğrultusunda yönlendirme için telefon veya WhatsApp üzerinden hızlı iletişim kurulabilir.
+                            </div>
+                        </div>
+                    </article>
+                    <article class="faq-item" data-reveal>
+                        <button class="faq-question" type="button" aria-expanded="false">
+                            <span>Sipariş ve tedarik süreci nasıl ilerliyor?</span>
+                            <i class="fa-solid fa-plus" aria-hidden="true"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">
+                                Talep alındıktan sonra uygun ürün grubu belirlenir, tedarik planı netleştirilir ve teslimat organizasyonu buna göre yürütülür. Süreç boyunca iletişim açık tutulur.
+                            </div>
+                        </div>
+                    </article>
+                    <article class="faq-item" data-reveal>
+                        <button class="faq-question" type="button" aria-expanded="false">
+                            <span>Teslimat ve erişim konusunda nasıl destek alabilirim?</span>
+                            <i class="fa-solid fa-plus" aria-hidden="true"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">
+                                Acil ihtiyaçlarda telefon ve WhatsApp kanalları öne çıkar. Bölge, ürün niteliği ve talep detayına göre en uygun teslimat yaklaşımı paylaşılır.
+                            </div>
+                        </div>
+                    </article>
+                    <article class="faq-item" data-reveal>
+                        <button class="faq-question" type="button" aria-expanded="false">
+                            <span>Gerçek ürün kataloğu daha sonra eklendiğinde site yapısı değişecek mi?</span>
+                            <i class="fa-solid fa-plus" aria-hidden="true"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">
+                                Hayır. Bu çalışma özellikle modüler kuruldu. Kategori ve ürün kartları JavaScript veri dizisiyle üretildiği için gerçek katalog geldiğinde yalnızca veri güncellenerek alan genişletilebilir.
+                            </div>
+                        </div>
+                    </article>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Map Section -->
-    <section class="map-section">
-        <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3011.5956235679244!2d28.6327!3d41.0038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDHCsDAwJzEzLjciTiAyOMKwMzcnNTcuNyJF!5e0!3m2!1str!2str!4v1234567890"
-            allowfullscreen="" 
-            loading="lazy">
-        </iframe>
-    </section>
+        <section class="section" id="iletisim" aria-labelledby="contact-title">
+            <div class="container">
+                <div class="section-header" data-reveal>
+                    <span class="section-kicker">İletişim</span>
+                    <h2 id="contact-title">Hızlı iletişim, net erişim bilgileri ve profesyonel başvuru alanı tek bölümde.</h2>
+                    <p>Telefon ve WhatsApp erişimini belirgin ama şık biçimde öne çıkaran yapı; ziyaretçinin vakit kaybetmeden doğru kanala ulaşmasını sağlar.</p>
+                </div>
 
-    <!-- Footer -->
-    <footer>
+                <div class="contact-layout">
+                    <div class="contact-stack">
+                        <article class="contact-card" data-reveal>
+                            <h3>İletişim Bilgileri</h3>
+                            <p>Kurumsal tedarik talepleriniz, ürün bilgi istekleriniz ve hızlı erişim ihtiyaçlarınız için aşağıdaki kanalları kullanabilirsiniz.</p>
+                            <div class="contact-list">
+                                <div class="contact-item">
+                                    <i class="fa-solid fa-phone" aria-hidden="true"></i>
+                                    <div>
+                                        <strong>Telefon</strong>
+                                        <a href="tel:+902126427550">(0212) 642 7550</a><br>
+                                        <a href="tel:+902126427558">(0212) 642 7558</a>
+                                    </div>
+                                </div>
+                                <div class="contact-item">
+                                    <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+                                    <div>
+                                        <strong>WhatsApp</strong>
+                                        <a href="https://wa.me/902126427550?text=Merhaba%2C%20VIP%20Hayvanc%C4%B1l%C4%B1k%20ile%20ileti%C5%9Fime%20ge%C3%A7mek%20istiyorum." target="_blank" rel="noopener noreferrer">Hızlı mesaj başlatın</a>
+                                    </div>
+                                </div>
+                                <div class="contact-item">
+                                    <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                                    <div>
+                                        <strong>E-posta</strong>
+                                        <a href="mailto:info@viphayvancilik.com.tr">info@viphayvancilik.com.tr</a>
+                                    </div>
+                                </div>
+                                <div class="contact-item">
+                                    <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                                    <div>
+                                        <strong>Adres</strong>
+                                        <span>Adnan Kahveci Mah. Çankaya Cad. No:3, Beylikdüzü, İstanbul</span>
+                                    </div>
+                                </div>
+                                <div class="contact-item">
+                                    <i class="fa-solid fa-clock" aria-hidden="true"></i>
+                                    <div>
+                                        <strong>Çalışma Saatleri</strong>
+                                        <span>Pazartesi - Cuma: 08:30 - 18:00<br>Cumartesi: 09:00 - 14:00</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="cta-banner" data-reveal>
+                            <h3>Hızlı yanıt gereken durumlar için</h3>
+                            <p style="color: var(--text-soft);">İhtiyacınız netse doğrudan arayın; ürün grubu hakkında yazılı bilgi paylaşımı gerekiyorsa WhatsApp üzerinden hızlı iletişim kurun.</p>
+                            <div class="cta-actions">
+                                <a class="btn" href="tel:+902126427550"><i class="fa-solid fa-phone-volume" aria-hidden="true"></i> Hemen Arayın</a>
+                                <a class="btn-subtle" href="https://wa.me/902126427550?text=Merhaba%2C%20VIP%20Hayvanc%C4%B1l%C4%B1k%20ile%20h%C4%B1zl%C4%B1%20g%C3%B6r%C3%BC%C5%9Fmek%20istiyorum." target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i> WhatsApp</a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="contact-stack">
+                        <form class="contact-form" id="contactForm" novalidate data-reveal>
+                            <h3>Hızlı İletişim Formu</h3>
+                            <p style="color: var(--text-soft); margin-bottom: 22px;">Formu doldurduğunuzda talebiniz WhatsApp üzerinden paylaşılmaya hazır hale getirilir. Böylece backend gerektirmeden hızlı ve profesyonel bir akış sağlanır.</p>
+                            <div class="form-grid">
+                                <div class="field">
+                                    <label for="name">Ad Soyad *</label>
+                                    <input id="name" name="name" type="text" placeholder="Adınız Soyadınız" required minlength="3" autocomplete="name">
+                                    <span class="field-error" aria-live="polite"></span>
+                                </div>
+                                <div class="field">
+                                    <label for="phone">Telefon *</label>
+                                    <input id="phone" name="phone" type="tel" placeholder="05XX XXX XX XX" required inputmode="tel" autocomplete="tel">
+                                    <span class="field-error" aria-live="polite"></span>
+                                </div>
+                                <div class="field">
+                                    <label for="company">İşletme / Kurum</label>
+                                    <input id="company" name="company" type="text" placeholder="Çiftlik, klinik veya kurum adı" autocomplete="organization">
+                                    <span class="field-error" aria-live="polite"></span>
+                                </div>
+                                <div class="field">
+                                    <label for="email">E-posta</label>
+                                    <input id="email" name="email" type="email" placeholder="ornek@firma.com" autocomplete="email">
+                                    <span class="field-error" aria-live="polite"></span>
+                                </div>
+                                <div class="field field-full">
+                                    <label for="subject">Talep Konusu *</label>
+                                    <select id="subject" name="subject" required>
+                                        <option value="">Konu seçin</option>
+                                        <option value="Veteriner ilaçları">Veteriner ilaçları</option>
+                                        <option value="Aşı ve biyolojik ürünler">Aşı ve biyolojik ürünler</option>
+                                        <option value="Spermalar ve ıslah ürünleri">Spermalar ve ıslah ürünleri</option>
+                                        <option value="Veteriner medikal sarf">Veteriner medikal sarf</option>
+                                        <option value="Mikroçip ve okuyucular">Mikroçip ve okuyucular</option>
+                                        <option value="Hayvancılık ekipmanları">Hayvancılık ekipmanları</option>
+                                        <option value="Genel bilgi talebi">Genel bilgi talebi</option>
+                                    </select>
+                                    <span class="field-error" aria-live="polite"></span>
+                                </div>
+                                <div class="field field-full">
+                                    <label for="message">Mesajınız *</label>
+                                    <textarea id="message" name="message" placeholder="Talebinizin detaylarını, ürün grubunu veya ihtiyaç duyduğunuz bilgiyi yazın." required minlength="12"></textarea>
+                                    <span class="field-error" aria-live="polite"></span>
+                                </div>
+                            </div>
+                            <p class="form-note">* İşaretli alanlar zorunludur.</p>
+                            <div class="form-actions">
+                                <button class="btn" type="submit">
+                                    <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+                                    Talebi Hazırla
+                                </button>
+                                <a class="btn-subtle" href="mailto:info@viphayvancilik.com.tr">
+                                    <i class="fa-solid fa-envelope-open-text" aria-hidden="true"></i>
+                                    E-posta Gönder
+                                </a>
+                            </div>
+                            <div class="form-feedback" id="formFeedback" aria-live="polite">
+                                <strong>Talebiniz hazırlandı.</strong>
+                                <p id="formFeedbackText">Aşağıdaki buton ile bilgileri doğrudan WhatsApp üzerinden paylaşabilirsiniz.</p>
+                                <div class="cta-actions">
+                                    <a class="btn" id="whatsappPreparedLink" href="https://wa.me/902126427550" target="_blank" rel="noopener noreferrer">
+                                        <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+                                        WhatsApp'ta Gönder
+                                    </a>
+                                    <a class="btn-subtle" href="tel:+902126427550">
+                                        <i class="fa-solid fa-phone" aria-hidden="true"></i>
+                                        Telefon ile Görüşün
+                                    </a>
+                                </div>
+                            </div>
+                        </form>
+
+                        <div class="map-card" data-reveal>
+                            <iframe
+                                title="VIP Hayvancılık konumu"
+                                src="https://www.google.com/maps?q=Adnan%20Kahveci%20Mah.%20%C3%87ankaya%20Cad.%20No:3%20Beylikd%C3%BCz%C3%BC%20%C4%B0stanbul&output=embed"
+                                loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
-                    <div class="logo-footer">
-                        <img src="https://lincmedipharma-wq.github.io/viphayvancilik/logo.png" alt="VIP Hayvancılık Logo">
-                    </div>
-                    <p>2007'den beri İstanbul Beylikdüzü'nde veteriner medikal ürünler ve hayvancılık ekipmanları tedariği. 3 veteriner hekim ortaklığı.</p>
-                    <p style="font-size: 0.875rem; color: var(--gray-500);">
-                        <i class="fas fa-shield-halved"></i> T.C. Tarım ve Orman Bakanlığı Ruhsatlı Ecza Deposu
-                    </p>
+                    <a class="brand" href="#home" aria-label="VIP Hayvancılık ana sayfa">
+                        <span class="brand-mark" aria-hidden="true">VIP</span>
+                        <span class="brand-text">
+                            <span class="brand-title" style="color: #fff;">VIP HAYVANCILIK</span>
+                            <span class="brand-subtitle" style="color: rgba(255,255,255,0.55);">Veteriner Medikal Tedarik</span>
+                        </span>
+                    </a>
+                    <p>Veteriner ilaçları, aşılar, spermalar, medikal ürünler, cihazlar, mikroçipler ve hayvancılık ekipmanlarında güven veren kurumsal çözüm ortağı.</p>
+                    <span class="topbar-pill"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i> Güven, ciddiyet ve sürdürülebilir tedarik yaklaşımı</span>
                 </div>
-                <div class="footer-links">
-                    <h4>Hızlı Linkler</h4>
-                    <ul>
+
+                <div>
+                    <h3 class="footer-title">Kurumsal Menü</h3>
+                    <ul class="footer-links">
                         <li><a href="#home">Ana Sayfa</a></li>
-                        <li><a href="#products">Ürünler</a></li>
-                        <li><a href="#about">Hakkımızda</a></li>
-                        <li><a href="#contact">İletişim</a></li>
+                        <li><a href="#neden-biz">Neden Biz</a></li>
+                        <li><a href="#kategoriler">Ürün Alanları</a></li>
+                        <li><a href="#kurumsal">Kurumsal</a></li>
+                        <li><a href="#iletisim">İletişim</a></li>
                     </ul>
                 </div>
-                <div class="footer-links">
-                    <h4>Ürünler</h4>
-                    <ul>
-                        <li><a href="#products">Veteriner İlaçları</a></li>
-                        <li><a href="#products">Aşılar</a></li>
-                        <li><a href="#products">Spermalar</a></li>
-                        <li><a href="#products">Medikal Malzemeler</a></li>
+
+                <div>
+                    <h3 class="footer-title">Ürün Grupları</h3>
+                    <ul class="footer-links">
+                        <li><a href="#urunler">Veteriner ilaçları</a></li>
+                        <li><a href="#urunler">Aşı ve biyolojik ürünler</a></li>
+                        <li><a href="#urunler">Spermalar ve ıslah ürünleri</a></li>
+                        <li><a href="#urunler">Mikroçip ve okuyucular</a></li>
+                        <li><a href="#urunler">Hayvancılık ekipmanları</a></li>
                     </ul>
                 </div>
-                <div class="footer-links">
-                    <h4>Yasal</h4>
-                    <ul>
-                        <li><a href="#">Gizlilik Politikası</a></li>
-                        <li><a href="#">Kullanım Koşulları</a></li>
-                        <li><a href="#">Mesafeli Satış Sözleşmesi</a></li>
-                        <li><a href="#">Çerez Politikası</a></li>
+
+                <div>
+                    <h3 class="footer-title">İletişim</h3>
+                    <ul class="footer-contact">
+                        <li><a href="tel:+902126427550">(0212) 642 7550</a></li>
+                        <li><a href="mailto:info@viphayvancilik.com.tr">info@viphayvancilik.com.tr</a></li>
+                        <li><a href="https://wa.me/902126427550" target="_blank" rel="noopener noreferrer">WhatsApp Hattı</a></li>
+                        <li><span>Adnan Kahveci Mah. Çankaya Cad. No:3, Beylikdüzü, İstanbul</span></li>
                     </ul>
                 </div>
             </div>
+
             <div class="footer-bottom">
-                <p>&copy; 2025 VIP Hayvancılık Veteriner Medikal San. ve Dış Tic. Ltd. Şti. Tüm hakları saklıdır.</p>
-                <p>Web sitesi <strong>Kimi</strong> tarafından yapılmıştır 😊</p>
+                <span>© <span id="currentYear"></span> VIP Hayvancılık Veteriner Medikal San. ve Dış Tic. Ltd. Şti. Tüm hakları saklıdır.</span>
+                <span>Kurumsal tedarik, profesyonel iletişim ve güven veren sunum odağıyla tasarlandı.</span>
             </div>
         </div>
     </footer>
 
-    <!-- WhatsApp Float -->
-    <a href="https://wa.me/902126427550" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
-        <i class="fab fa-whatsapp"></i>
-    </a>
+    <div class="floating-contact" aria-label="Hızlı iletişim kısayolları">
+        <a class="floating-link phone" href="tel:+902126427550">
+            <i class="fa-solid fa-phone-volume" aria-hidden="true"></i>
+            <span>Ara</span>
+        </a>
+        <a class="floating-link whatsapp" href="https://wa.me/902126427550?text=Merhaba%2C%20VIP%20Hayvanc%C4%B1l%C4%B1k%20ile%20g%C3%B6r%C3%BC%C5%9Fmek%20istiyorum." target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+            <span>WhatsApp</span>
+        </a>
+    </div>
 
     <script>
-        // Mobile Menu Toggle
-        function toggleMenu() {
-            const navLinks = document.getElementById('navLinks');
-            navLinks.classList.toggle('active');
+        const categoryData = [
+            {
+                title: "Veteriner İlaçları",
+                icon: "fa-solid fa-capsules",
+                description: "Büyükbaş ve küçükbaş operasyonlarına uygun ilaç grupları için düzenli ve profesyonel tedarik yaklaşımı.",
+                tags: ["Tedavi odaklı", "Sahaya uygun", "Kurumsal tedarik"],
+                group: "ilac"
+            },
+            {
+                title: "Aşı ve Biyolojik Ürünler",
+                icon: "fa-solid fa-syringe",
+                description: "Koruyucu sağlık uygulamaları ve biyolojik ürün süreçlerinde kontrollü erişim ve hızlı iletişim.",
+                tags: ["Soğuk zincir", "Aşı programları", "Hızlı erişim"],
+                group: "asi"
+            },
+            {
+                title: "Spermalar ve Islah Materyalleri",
+                icon: "fa-solid fa-dna",
+                description: "Damızlık, verimlilik ve yetiştiricilik hedeflerine uygun temsili genetik ürün grupları.",
+                tags: ["Islah desteği", "Temsili katalog", "Genişletilebilir yapı"],
+                group: "genetik"
+            },
+            {
+                title: "Veteriner Medikal Ürünler",
+                icon: "fa-solid fa-stethoscope",
+                description: "Muayene, bakım, tedavi ve saha uygulamalarında ihtiyaç duyulan medikal sarf ürünleri.",
+                tags: ["Medikal sarf", "Klinik kullanım", "Saha desteği"],
+                group: "medikal"
+            },
+            {
+                title: "Cerrahi İplikler",
+                icon: "fa-solid fa-scissors",
+                description: "Operasyon süreçlerinde kalite beklentisini karşılayacak cerrahi iplik ve yardımcı ürün grupları.",
+                tags: ["Operasyon", "Cerrahi sarf", "Profesyonel kullanım"],
+                group: "medikal"
+            },
+            {
+                title: "Cihazlar, Mikroçip ve Okuyucular",
+                icon: "fa-solid fa-microchip",
+                description: "Kimliklendirme, takip ve saha operasyonları için teknik cihazlar ve destekleyici ekipmanlar.",
+                tags: ["Takip çözümleri", "Okuyucu sistemleri", "Teknik ürünler"],
+                group: "ekipman"
+            },
+            {
+                title: "Yakalama Aparatları",
+                icon: "fa-solid fa-toolbox",
+                description: "Saha güvenliği ve pratik uygulama ihtiyaçları için tamamlayıcı yakalama ve yönlendirme ekipmanları.",
+                tags: ["Saha ekipmanı", "Operasyon desteği", "Dayanıklı yapı"],
+                group: "ekipman"
+            },
+            {
+                title: "Tırnak Bakım ve Hayvancılık Ekipmanları",
+                icon: "fa-solid fa-cow",
+                description: "Bakım, hijyen ve günlük işletme operasyonlarına destek olan ekipman çözümleri.",
+                tags: ["Bakım ürünleri", "İşletme desteği", "Genişleyen katalog"],
+                group: "ekipman"
+            }
+        ];
+
+        const filterData = [
+            { key: "all", label: "Tümü" },
+            { key: "ilac", label: "İlaçlar" },
+            { key: "asi", label: "Aşılar" },
+            { key: "genetik", label: "Spermalar" },
+            { key: "medikal", label: "Medikal" },
+            { key: "ekipman", label: "Ekipman" }
+        ];
+
+        const featuredProducts = [
+            {
+                category: "ilac",
+                badge: "Temsili Grup",
+                title: "Geniş Kullanım Alanlı Veteriner İlaç Serileri",
+                note: "Katalog güncellenebilir",
+                summary: "Farklı operasyon ihtiyaçları için gruplandırılabilecek veteriner ilaç portföyü.",
+                bullets: [
+                    "Büyükbaş ve küçükbaş uygulamalarına göre ayrıştırılabilir yapı",
+                    "Yeni marka ve ürünler veri dizisi ile kolayca eklenebilir",
+                    "Teklif ve bilgi talepleri için hızlı iletişim CTA'sı hazır"
+                ],
+                icon: "fa-solid fa-capsules"
+            },
+            {
+                category: "asi",
+                badge: "Soğuk Zincir",
+                title: "Aşı ve Biyolojik Ürün Kümeleri",
+                note: "Koruyucu sağlık odaklı",
+                summary: "Aşı grupları, dönemsel programlar ve biyolojik ürün akışı için profesyonel görünümde kart altyapısı.",
+                bullets: [
+                    "Aşı özelinde ayrı içerik ve etiketleme yapılabilir",
+                    "Saklama ve sevk hassasiyetini vurgulayan anlatım dili hazır",
+                    "Gerçek katalog geldiğinde alt ürünlerle genişleyebilir"
+                ],
+                icon: "fa-solid fa-syringe"
+            },
+            {
+                category: "genetik",
+                badge: "Islah Çözümleri",
+                title: "Spermalar ve Damızlık Destek Ürünleri",
+                note: "Temsili örnek kart",
+                summary: "Spermalar için özel anlatım dili ve uzmanlık vurgusu taşıyan, sektöre uygun kart yapısı.",
+                bullets: [
+                    "Irk, menşei ve verim bilgileri eklenmeye uygun modüler tasarım",
+                    "Talep yönlendirmesi ve danışma CTA'ları öne çıkarılmış yapı",
+                    "Farklı sperma serileri aynı sistemle çoğaltılabilir"
+                ],
+                icon: "fa-solid fa-dna"
+            },
+            {
+                category: "medikal",
+                badge: "Sarf ve Uygulama",
+                title: "Veteriner Medikal Sarf Ürünleri",
+                note: "Klinik ve saha kullanımı",
+                summary: "Muayene, uygulama ve bakım süreçlerini destekleyen sarf ürün grupları için modern görünüm.",
+                bullets: [
+                    "Ürün bazlı kısa açıklama ve detay isteme akışı hazır",
+                    "Klinik ve saha kullanımına göre etiketleme yapılabilir",
+                    "Geniş katalog yapısına uygun tekrar kullanılabilir kart sistemi"
+                ],
+                icon: "fa-solid fa-stethoscope"
+            },
+            {
+                category: "medikal",
+                badge: "Operasyon",
+                title: "Cerrahi İplik ve Operasyon Yardımcıları",
+                note: "Profesyonel segment",
+                summary: "Cerrahi odaklı ürünler için daha premium ve teknik algı oluşturan içerik yapısı.",
+                bullets: [
+                    "Ölçü, kullanım alanı ve ürün varyantı eklemeye uygun",
+                    "Operasyon güveni ve kalite beklentisini destekleyen sunum",
+                    "B2B müşteri görüşmeleri için güçlü kart dili"
+                ],
+                icon: "fa-solid fa-scissors"
+            },
+            {
+                category: "ekipman",
+                badge: "Kimliklendirme",
+                title: "Mikroçipler ve Okuyucu Sistemleri",
+                note: "Teknik ürün grubu",
+                summary: "Mikroçip ve okuyucu çözümlerini kurumsal bir çizgide sergileyen modern kart yapısı.",
+                bullets: [
+                    "Teknik özellik, kullanım alanı ve uyumluluk verileri eklenebilir",
+                    "Takip ve kimliklendirme ihtiyacına göre detaylandırılabilir",
+                    "Kurumsal müşterilere uygun sade ama güçlü görünüm"
+                ],
+                icon: "fa-solid fa-microchip"
+            }
+        ];
+
+        const categoriesGrid = document.getElementById("categoriesGrid");
+        const filterRow = document.getElementById("filterRow");
+        const featuredGrid = document.getElementById("featuredGrid");
+        const mobileToggle = document.getElementById("mobileToggle");
+        const navMenu = document.getElementById("navMenu");
+        const siteHeader = document.getElementById("siteHeader");
+        const navLinks = [...document.querySelectorAll(".nav-link")];
+        const sections = navLinks
+            .map((link) => document.querySelector(link.getAttribute("href")))
+            .filter(Boolean);
+
+        let activeFilter = "all";
+
+        function renderCategories() {
+            categoriesGrid.innerHTML = categoryData.map((item) => `
+                <article class="category-card" data-reveal>
+                    <div class="card-icon"><i class="${item.icon}" aria-hidden="true"></i></div>
+                    <h3>${item.title}</h3>
+                    <p>${item.description}</p>
+                    <div class="category-tags">
+                        ${item.tags.map((tag) => `<span class="chip">${tag}</span>`).join("")}
+                    </div>
+                </article>
+            `).join("");
         }
 
-        // Product Filter
-        function filterProducts(category) {
-            const buttons = document.querySelectorAll('.filter-btn');
-            const cards = document.querySelectorAll('.product-card');
-            
-            buttons.forEach(btn => btn.classList.remove('active'));
-            event.target.classList.add('active');
-            
-            cards.forEach(card => {
-                if (category === 'all' || card.dataset.category === category) {
-                    card.style.display = 'block';
-                    card.style.animation = 'fadeIn 0.5s';
-                } else {
-                    card.style.display = 'none';
+        function renderFilters() {
+            filterRow.innerHTML = filterData.map((item) => `
+                <button
+                    class="filter-btn ${item.key === activeFilter ? "is-active" : ""}"
+                    type="button"
+                    data-filter="${item.key}"
+                    aria-pressed="${item.key === activeFilter ? "true" : "false"}"
+                >
+                    ${item.label}
+                </button>
+            `).join("");
+        }
+
+        function renderFeatured() {
+            const items = activeFilter === "all"
+                ? featuredProducts
+                : featuredProducts.filter((item) => item.category === activeFilter);
+
+            if (!items.length) {
+                featuredGrid.innerHTML = `
+                    <div class="featured-empty">
+                        Bu filtre altında gösterilecek ürün grubu bulunmuyor. Gerçek katalog geldiğinde aynı yapı üzerinden yeni kartlar doğrudan eklenebilir.
+                    </div>
+                `;
+                return;
+            }
+
+            featuredGrid.innerHTML = items.map((item) => {
+                const whatsappText = encodeURIComponent(`Merhaba, ${item.title} hakkında bilgi almak istiyorum.`);
+                return `
+                    <article class="featured-card" data-reveal>
+                        <div class="featured-media">
+                            <span class="featured-badge">${item.badge}</span>
+                            <h3>${item.title}</h3>
+                            <p>${item.summary}</p>
+                            <i class="featured-icon ${item.icon}" aria-hidden="true"></i>
+                        </div>
+                        <div class="featured-content">
+                            <div class="featured-meta">
+                                <span class="featured-category">${filterData.find((filter) => filter.key === item.category)?.label || "Ürün Grubu"}</span>
+                                <span class="featured-note">${item.note}</span>
+                            </div>
+                            <ul class="featured-list">
+                                ${item.bullets.map((bullet) => `
+                                    <li>
+                                        <i class="fa-solid fa-check" aria-hidden="true"></i>
+                                        <span>${bullet}</span>
+                                    </li>
+                                `).join("")}
+                            </ul>
+                            <div class="featured-actions">
+                                <a class="btn" href="https://wa.me/902126427550?text=${whatsappText}" target="_blank" rel="noopener noreferrer">
+                                    <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+                                    Bilgi Al
+                                </a>
+                                <a class="btn-subtle" href="tel:+902126427550">
+                                    <i class="fa-solid fa-phone" aria-hidden="true"></i>
+                                    Telefon
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                `;
+            }).join("");
+        }
+
+        function bindFilterEvents() {
+            filterRow.querySelectorAll("[data-filter]").forEach((button) => {
+                button.addEventListener("click", () => {
+                    activeFilter = button.dataset.filter;
+                    renderFilters();
+                    renderFeatured();
+                    activateReveals();
+                    bindFilterEvents();
+                });
+            });
+        }
+
+        function setMenuState(isOpen) {
+            navMenu.classList.toggle("is-open", isOpen);
+            mobileToggle.setAttribute("aria-expanded", String(isOpen));
+            mobileToggle.innerHTML = isOpen
+                ? '<i class="fa-solid fa-xmark" aria-hidden="true"></i>'
+                : '<i class="fa-solid fa-bars" aria-hidden="true"></i>';
+            mobileToggle.setAttribute("aria-label", isOpen ? "Menüyü kapat" : "Menüyü aç");
+            document.body.classList.toggle("menu-open", isOpen);
+        }
+
+        mobileToggle.addEventListener("click", () => {
+            const isOpen = !navMenu.classList.contains("is-open");
+            setMenuState(isOpen);
+        });
+
+        navLinks.forEach((link) => {
+            link.addEventListener("click", () => {
+                if (window.innerWidth <= 920) {
+                    setMenuState(false);
+                }
+            });
+        });
+
+        document.addEventListener("keydown", (event) => {
+            if (event.key === "Escape" && navMenu.classList.contains("is-open")) {
+                setMenuState(false);
+            }
+        });
+
+        window.addEventListener("resize", () => {
+            if (window.innerWidth > 920) {
+                setMenuState(false);
+            }
+        });
+
+        function updateHeaderState() {
+            siteHeader.classList.toggle("is-scrolled", window.scrollY > 16);
+        }
+
+        window.addEventListener("scroll", updateHeaderState, { passive: true });
+        updateHeaderState();
+
+        function updateActiveNav() {
+            const offset = window.scrollY + 140;
+            let currentId = sections[0]?.id || "";
+
+            sections.forEach((section) => {
+                if (section.offsetTop <= offset) {
+                    currentId = section.id;
+                }
+            });
+
+            navLinks.forEach((link) => {
+                const isActive = link.getAttribute("href") === `#${currentId}`;
+                link.classList.toggle("is-active", isActive);
+            });
+        }
+
+        window.addEventListener("scroll", updateActiveNav, { passive: true });
+        updateActiveNav();
+
+        const revealObserver = window.matchMedia("(prefers-reduced-motion: reduce)").matches
+            ? null
+            : new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("is-visible");
+                        revealObserver.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.14, rootMargin: "0px 0px -40px 0px" });
+
+        function activateReveals() {
+            document.querySelectorAll("[data-reveal]").forEach((element) => {
+                if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+                    element.classList.add("is-visible");
+                } else if (!element.classList.contains("is-visible")) {
+                    revealObserver.observe(element);
                 }
             });
         }
 
-        // Form Submit
-        function handleSubmit(e) {
-            e.preventDefault();
-            alert('Mesajınız alındı! En kısa sürede size dönüş yapacağız.');
-            e.target.reset();
+        const faqItems = document.querySelectorAll(".faq-item");
+
+        function toggleFaq(item, forceOpen = null) {
+            const button = item.querySelector(".faq-question");
+            const answer = item.querySelector(".faq-answer");
+            const shouldOpen = forceOpen !== null ? forceOpen : !item.classList.contains("is-open");
+
+            faqItems.forEach((faq) => {
+                if (faq !== item) {
+                    faq.classList.remove("is-open");
+                    faq.querySelector(".faq-question").setAttribute("aria-expanded", "false");
+                    faq.querySelector(".faq-answer").style.maxHeight = "0px";
+                }
+            });
+
+            item.classList.toggle("is-open", shouldOpen);
+            button.setAttribute("aria-expanded", String(shouldOpen));
+            answer.style.maxHeight = shouldOpen ? `${answer.scrollHeight}px` : "0px";
         }
 
-        // Scroll Animation
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
+        faqItems.forEach((item, index) => {
+            const button = item.querySelector(".faq-question");
+            button.addEventListener("click", () => toggleFaq(item));
+            if (index === 0) {
+                toggleFaq(item, true);
+            }
+        });
+
+        const contactForm = document.getElementById("contactForm");
+        const formFeedback = document.getElementById("formFeedback");
+        const formFeedbackText = document.getElementById("formFeedbackText");
+        const whatsappPreparedLink = document.getElementById("whatsappPreparedLink");
+
+        const validationMessages = {
+            name: "Lütfen en az 3 karakterden oluşan ad soyad bilgisi girin.",
+            phone: "Lütfen geçerli bir telefon numarası girin.",
+            email: "Lütfen geçerli bir e-posta adresi girin.",
+            subject: "Lütfen bir talep konusu seçin.",
+            message: "Lütfen en az 12 karakter içeren bir mesaj yazın."
         };
 
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
+        function getPhoneDigits(value) {
+            return value.replace(/\D/g, "");
+        }
+
+        function validateField(field) {
+            const wrapper = field.closest(".field");
+            const errorEl = wrapper.querySelector(".field-error");
+            let message = "";
+
+            if (field.name === "name") {
+                if (field.value.trim().length < 3) {
+                    message = validationMessages.name;
                 }
-            });
-        }, observerOptions);
-
-        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
-
-        // Smooth Scroll for Navigation Links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                    // Close mobile menu if open
-                    document.getElementById('navLinks').classList.remove('active');
+            } else if (field.name === "phone") {
+                const digits = getPhoneDigits(field.value);
+                if (digits.length < 10) {
+                    message = validationMessages.phone;
                 }
-            });
-        });
-
-        // Header Scroll Effect
-        let lastScroll = 0;
-        window.addEventListener('scroll', () => {
-            const header = document.querySelector('header');
-            const currentScroll = window.pageYOffset;
-            
-            if (currentScroll > 100) {
-                header.style.boxShadow = '0 4px 20px rgba(0,0,0,0.1)';
-            } else {
-                header.style.boxShadow = '0 4px 6px -1px rgba(0, 0, 0, 0.1)';
+            } else if (field.name === "email") {
+                if (field.value.trim() && !field.checkValidity()) {
+                    message = validationMessages.email;
+                }
+            } else if (field.name === "subject") {
+                if (!field.value) {
+                    message = validationMessages.subject;
+                }
+            } else if (field.name === "message") {
+                if (field.value.trim().length < 12) {
+                    message = validationMessages.message;
+                }
             }
-            
-            lastScroll = currentScroll;
+
+            wrapper.classList.toggle("is-invalid", Boolean(message));
+            field.setAttribute("aria-invalid", String(Boolean(message)));
+            errorEl.textContent = message;
+            return !message;
+        }
+
+        contactForm.querySelectorAll("input, select, textarea").forEach((field) => {
+            field.addEventListener("blur", () => validateField(field));
+            field.addEventListener("input", () => {
+                if (field.closest(".field").classList.contains("is-invalid")) {
+                    validateField(field);
+                }
+            });
         });
+
+        contactForm.addEventListener("submit", (event) => {
+            event.preventDefault();
+
+            const fields = [...contactForm.querySelectorAll("input, select, textarea")];
+            const isValid = fields.map(validateField).every(Boolean);
+
+            if (!isValid) {
+                const firstInvalid = contactForm.querySelector("[aria-invalid='true']");
+                if (firstInvalid) {
+                    firstInvalid.focus();
+                }
+                formFeedback.classList.remove("is-visible");
+                return;
+            }
+
+            const formData = new FormData(contactForm);
+            const name = formData.get("name").toString().trim();
+            const phone = formData.get("phone").toString().trim();
+            const company = formData.get("company").toString().trim();
+            const email = formData.get("email").toString().trim();
+            const subject = formData.get("subject").toString().trim();
+            const message = formData.get("message").toString().trim();
+
+            const whatsappMessage = [
+                "Merhaba, iletişim formunu doldurdum.",
+                `Ad Soyad: ${name}`,
+                `Telefon: ${phone}`,
+                company ? `İşletme/Kurum: ${company}` : "",
+                email ? `E-posta: ${email}` : "",
+                `Konu: ${subject}`,
+                `Mesaj: ${message}`
+            ].filter(Boolean).join("\n");
+
+            whatsappPreparedLink.href = `https://wa.me/902126427550?text=${encodeURIComponent(whatsappMessage)}`;
+            formFeedbackText.textContent = `${name} için hazırlanan talep özeti WhatsApp üzerinden doğrudan paylaşılabilir. Dilerseniz ayrıca telefonla da hızlı görüşme sağlayabilirsiniz.`;
+            formFeedback.classList.add("is-visible");
+            contactForm.reset();
+            contactForm.querySelectorAll(".field").forEach((wrapper) => wrapper.classList.remove("is-invalid"));
+            contactForm.querySelectorAll(".field-error").forEach((error) => { error.textContent = ""; });
+            contactForm.querySelectorAll("[aria-invalid]").forEach((field) => field.setAttribute("aria-invalid", "false"));
+        });
+
+        document.getElementById("currentYear").textContent = new Date().getFullYear();
+
+        renderCategories();
+        renderFilters();
+        renderFeatured();
+        bindFilterEvents();
+        activateReveals();
+
+        // Geliştirme özeti:
+        // - Tasarım kurumsal güven ve premium görünüm odağında tamamen yenilendi.
+        // - Ürün/kategori alanları veri dizileri ile modüler hale getirildi.
+        // - Mobil menü, SSS, form doğrulama ve hızlı iletişim CTA'ları profesyonelleştirildi.
     </script>
 </body>
 </html>
